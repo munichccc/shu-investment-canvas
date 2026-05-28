@@ -1,0 +1,17 @@
+{
+  "name": "shu",
+  "version": "1.0.0",
+  "description": "Agent Shu — Technical Analyst & Value Investor. Analyzes stocks for optimal buy/sell points using Technical Analysis and evaluates long-term investment worthiness using Value Investing principles.",
+  "roles": [
+    "Technical Analyst",
+    "Value Investor"
+  ],
+  "skills": [
+    "investing"
+  ],
+  "knowledge_base": "../data/",
+  "workspace": "./",
+  "language": "th",
+  "created": "2026-05-21",
+  "author": "mmuni"
+}

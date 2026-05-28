@@ -1,0 +1,32 @@
+name: Daily Stock Data Update
+
+on:
+  schedule:
+    - cron: '30 21 * * 1-5' # Runs Monday to Friday at 21:30 UTC (04:30 AM Thailand Time)
+  workflow_dispatch: # Allows you to manually trigger the update from the GitHub website at any time
+
+permissions:
+  contents: write # Grants the workflow permission to write/push the updated files back to your repository
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Run Update Script (Live Yahoo Fetch & Compile)
+      run: python update_data.py
+
+    - name: Commit and Push Updated App Files
+      run: |
+        git config --global user.name "GitHub Action Updater"
+        git config --global user.email "updater@github.com"
+        git add -A
+        git commit -m "Auto Update: Live Stock Prices & Compiled Dashboards" || exit 0
+        git push

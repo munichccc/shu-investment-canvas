@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shu Canvas — AI Investment Analysis Dashboard combining Technical Analysis and Value Investing" />
+  <title>Shu Canvas — Investment Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <div class="logo-ring"></div>
+        <div class="logo-ring ring-2"></div>
+        <div class="logo-ring ring-3"></div>
+        <span class="logo-text">SHU</span>
+      </div>
+      <p class="loading-text">Initializing Analysis Engine...</p>
+      <div class="loading-bar">
+        <div class="loading-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-3"></div>
+
+  <!-- Main App -->
+  <div id="app" class="app hidden">
+
+    <!-- Top Navigation -->
+    <header id="top-nav" class="top-nav">
+      <div class="nav-left">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M14 2L26 8V20L14 26L2 20V8L14 2Z" stroke="url(#brand-grad)" stroke-width="2" fill="none"/>
+              <path d="M14 8L20 11V17L14 20L8 17V11L14 8Z" fill="url(#brand-grad)" opacity="0.6"/>
+              <defs>
+                <linearGradient id="brand-grad" x1="2" y1="2" x2="26" y2="26">
+                  <stop offset="0%" stop-color="#6366f1"/>
+                  <stop offset="100%" stop-color="#06b6d4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">SHU</span>
+            <span class="brand-sub">Investment Analyst</span>
+          </div>
+          <div class="selector-wrapper">
+            <select id="stock-selector" class="stock-select">
+              <option value="GOOGL" selected>GOOGL (Alphabet) • Live</option>
+              <option value="ANET">ANET (Arista)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="nav-center">
+        <div class="tab-group" id="main-tabs">
+          <button class="tab active" data-tab="overview" id="tab-overview">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Overview
+          </button>
+          <button class="tab" data-tab="technical" id="tab-technical">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+            Technical
+          </button>
+          <button class="tab" data-tab="fundamental" id="tab-fundamental">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            Fundamental
+          </button>
+          <button class="tab" data-tab="thesis" id="tab-thesis">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+            Thesis
+          </button>
+          <div class="tab-indicator" id="tab-indicator"></div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="stock-badge" id="stock-badge">
+          <span class="stock-symbol" id="stock-symbol">—</span>
+          <span class="stock-price" id="stock-price">—</span>
+          <span class="stock-change" id="stock-change">—</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Area -->
+    <main class="main-content">
+
+      <!-- ==================== OVERVIEW TAB ==================== -->
+      <section id="panel-overview" class="panel active">
+        <!-- Hero Card -->
+        <div class="hero-card" id="hero-card">
+          <div class="hero-left">
+            <div class="hero-company">
+              <div class="company-avatar" id="company-avatar">
+                <span id="company-initial">A</span>
+              </div>
+              <div>
+                <h1 class="company-name" id="company-name">Loading...</h1>
+                <p class="company-industry" id="company-industry">—</p>
+              </div>
+            </div>
+            <div class="hero-price-block">
+              <span class="hero-price" id="hero-price">—</span>
+              <span class="hero-change positive" id="hero-change">—</span>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-verdict" id="hero-verdict">
+              <div class="verdict-label">VERDICT</div>
+              <div class="verdict-value" id="verdict-value">—</div>
+              <div class="verdict-confidence" id="verdict-confidence">—</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats Row -->
+        <div class="stats-row" id="stats-row">
+          <div class="stat-card glass" id="stat-ta-score">
+            <div class="stat-icon ta-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">TA Score</span>
+              <span class="stat-value" id="ta-score-val">—</span>
+            </div>
+            <div class="stat-ring" id="ta-ring">
+              <svg viewBox="0 0 36 36">
+                <path class="ring-bg" d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke-width="3"/>
+                <path class="ring-fill ta-fill" d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke-width="3" stroke-dasharray="0, 100"/>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-card glass" id="stat-vi-score">
+            <div class="stat-icon vi-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">VI Score</span>
+              <span class="stat-value" id="vi-score-val">—</span>
+            </div>
+            <div class="stat-ring" id="vi-ring">
+              <svg viewBox="0 0 36 36">
+                <path class="ring-bg" d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke-width="3"/>
+                <path class="ring-fill vi-fill" d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke-width="3" stroke-dasharray="0, 100"/>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-card glass" id="stat-moat">
+            <div class="stat-icon moat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Moat</span>
+              <span class="stat-value" id="moat-val">—</span>
+            </div>
+          </div>
+          <div class="stat-card glass" id="stat-safety">
+            <div class="stat-icon safety-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Margin of Safety</span>
+              <span class="stat-value" id="safety-val">—</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="summary-grid">
+          <div class="summary-card glass" id="ta-summary-card">
+            <div class="card-header">
+              <h3><span class="card-icon">📊</span> Technical Summary</h3>
+              <span class="card-badge" id="ta-signal-badge">—</span>
+            </div>
+            <div class="card-body" id="ta-summary-content">
+              <p class="placeholder-text">Awaiting analysis...</p>
+            </div>
+          </div>
+          <div class="summary-card glass" id="vi-summary-card">
+            <div class="card-header">
+              <h3><span class="card-icon">💼</span> Value Summary</h3>
+              <span class="card-badge" id="vi-signal-badge">—</span>
+            </div>
+            <div class="card-body" id="vi-summary-content">
+              <p class="placeholder-text">Awaiting analysis...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TECHNICAL TAB ==================== -->
+      <section id="panel-technical" class="panel">
+        <div class="panel-header">
+          <h2><span class="panel-icon">📈</span> Technical Analysis</h2>
+          <p class="panel-subtitle">Multi-timeframe analysis with Volume Profile integration</p>
+        </div>
+
+        <!-- Trend Status -->
+        <div class="ta-grid">
+          <div class="ta-card glass" id="trend-card">
+            <h3 class="ta-card-title">🔍 Trend Status</h3>
+            <div class="trend-visual" id="trend-visual">
+              <div class="trend-arrow" id="trend-arrow">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+              </div>
+              <div class="trend-info">
+                <span class="trend-direction" id="trend-direction">—</span>
+                <span class="trend-strength" id="trend-strength">—</span>
+              </div>
+            </div>
+            <div class="trend-timeframes" id="trend-timeframes">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+
+          <div class="ta-card glass" id="levels-card">
+            <h3 class="ta-card-title">📍 Key Levels</h3>
+            <div class="levels-chart" id="levels-chart">
+              <!-- Visual levels display -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry Signal -->
+        <div class="entry-card glass" id="entry-card">
+          <div class="entry-header">
+            <h3 class="ta-card-title">🎯 Trade Setup</h3>
+            <div class="entry-signal" id="entry-signal">—</div>
+          </div>
+          <div class="entry-grid" id="entry-grid">
+            <!-- Filled by JS -->
+          </div>
+          <div class="entry-confluences" id="entry-confluences">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <!-- Risk Management -->
+        <div class="risk-card glass" id="risk-card">
+          <h3 class="ta-card-title">⚡ Risk Management</h3>
+          <div class="risk-visual" id="risk-visual">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <!-- TA Rationale -->
+        <div class="rationale-card glass" id="ta-rationale-card">
+          <h3 class="ta-card-title">📝 Rationale & Risks</h3>
+          <div class="rationale-content" id="ta-rationale-content">
+            <p class="placeholder-text">Awaiting analysis...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== FUNDAMENTAL TAB ==================== -->
+      <section id="panel-fundamental" class="panel">
+        <div class="panel-header">
+          <h2><span class="panel-icon">💼</span> Fundamental Analysis</h2>
+          <p class="panel-subtitle">Financial health, valuation, and competitive moat assessment</p>
+        </div>
+
+        <!-- Financial Scorecard -->
+        <div class="fin-grid">
+          <div class="fin-card glass" id="income-card">
+            <h3 class="fin-card-title">📊 Income Statement</h3>
+            <div class="fin-table-wrapper" id="income-table">
+              <p class="placeholder-text">Awaiting analysis...</p>
+            </div>
+          </div>
+          <div class="fin-card glass" id="balance-card">
+            <h3 class="fin-card-title">📋 Balance Sheet</h3>
+            <div class="fin-table-wrapper" id="balance-table">
+              <p class="placeholder-text">Awaiting analysis...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fin-grid">
+          <div class="fin-card glass" id="cashflow-card">
+            <h3 class="fin-card-title">💰 Cash Flow</h3>
+            <div class="fin-table-wrapper" id="cashflow-table">
+              <p class="placeholder-text">Awaiting analysis...</p>
+            </div>
+          </div>
+          <div class="fin-card glass" id="valuation-card">
+            <h3 class="fin-card-title">🎯 Valuation</h3>
+            <div class="fin-table-wrapper" id="valuation-table">
+              <p class="placeholder-text">Awaiting analysis...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Moat Analysis -->
+        <div class="moat-card glass" id="moat-card">
+          <h3 class="fin-card-title">🏰 Competitive Moat Analysis</h3>
+          <div class="moat-content" id="moat-content">
+            <p class="placeholder-text">Awaiting analysis...</p>
+          </div>
+        </div>
+
+        <!-- Overall Financial Grade -->
+        <div class="grade-card glass" id="grade-card">
+          <div class="grade-visual" id="grade-visual">
+            <div class="grade-letter" id="grade-letter">—</div>
+            <div class="grade-description" id="grade-description">Awaiting analysis</div>
+          </div>
+          <div class="grade-breakdown" id="grade-breakdown">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== THESIS TAB ==================== -->
+      <section id="panel-thesis" class="panel">
+        <div class="panel-header">
+          <h2><span class="panel-icon">📝</span> Investment Thesis</h2>
+          <p class="panel-subtitle">Combined TA + VI analysis with actionable recommendation</p>
+        </div>
+
+        <!-- Thesis Statement -->
+        <div class="thesis-hero glass" id="thesis-hero">
+          <div class="thesis-label">INVESTMENT THESIS</div>
+          <p class="thesis-statement" id="thesis-statement">Awaiting analysis...</p>
+        </div>
+
+        <!-- Bull & Bear Case -->
+        <div class="case-grid">
+          <div class="case-card bull glass" id="bull-card">
+            <h3 class="case-title">✅ Bull Case</h3>
+            <div class="case-content" id="bull-content">
+              <p class="placeholder-text">Awaiting analysis...</p>
+            </div>
+          </div>
+          <div class="case-card bear glass" id="bear-card">
+            <h3 class="case-title">❌ Bear Case</h3>
+            <div class="case-content" id="bear-content">
+              <p class="placeholder-text">Awaiting analysis...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Combined Recommendation -->
+        <div class="recommendation-card glass" id="recommendation-card">
+          <div class="rec-header">
+            <h3>🎯 Final Recommendation</h3>
+          </div>
+          <div class="rec-content">
+            <div class="rec-action" id="rec-action">—</div>
+            <div class="rec-details" id="rec-details">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Risks -->
+        <div class="risks-card glass" id="risks-card">
+          <h3 class="fin-card-title">⚠️ Key Risks to Monitor</h3>
+          <div class="risks-content" id="risks-content">
+            <p class="placeholder-text">Awaiting analysis...</p>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer" id="disclaimer">
+          ⚠️ การวิเคราะห์นี้เป็นเพียงความเห็นเพื่อการศึกษา ไม่ใช่คำแนะนำในการลงทุน กรุณาศึกษาข้อมูลเพิ่มเติมและปรึกษาผู้เชี่ยวชาญก่อนตัดสินใจลงทุน
+        </div>
+
+        <!-- Sources -->
+        <div class="sources-card glass" id="sources-card">
+          <h3 class="fin-card-title">📚 Knowledge Sources Referenced</h3>
+          <div class="sources-content" id="sources-content">
+            <p class="placeholder-text">Awaiting analysis...</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
