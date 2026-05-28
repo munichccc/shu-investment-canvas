@@ -1413,7 +1413,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initSelector();
   initScreener();
-  initSearch();
 });
 
 function initTabs() {
@@ -1563,7 +1562,7 @@ function initScreener() {
       const peText = item.pe === 'N/A' || !item.pe ? 'N/A' : item.pe.toFixed(1);
       
       return `
-        <tr class="screener-row" onclick="searchStockDirect('${item.symbol}')">
+        <tr class="screener-row" onclick="selectStockDirect('${item.symbol}')">
           <td class="screener-symbol">${item.symbol}</td>
           <td class="screener-name">${item.name}</td>
           <td class="screener-sector">${item.sector}</td>
@@ -1588,11 +1587,43 @@ function initScreener() {
   initTooltips();
 }
 
-function searchStockDirect(symbol) {
-  const input = document.getElementById('stock-search-input');
-  if (input) {
-    input.value = symbol;
-    performStockSearch(symbol);
+function selectStockDirect(symbol) {
+  if (stocksData[symbol]) {
+    activeStock = symbol;
+    const selector = document.getElementById('stock-selector');
+    if (selector) {
+      selector.value = symbol;
+      const trigger = document.getElementById('custom-select-trigger');
+      if (trigger) {
+        const selectedText = trigger.querySelector('.selected-text');
+        const option = Array.from(selector.options).find(o => o.value === symbol);
+        if (selectedText && option) {
+          selectedText.textContent = option.textContent;
+        }
+      }
+      
+      // Update options selection active state
+      const container = document.getElementById('custom-options-container');
+      if (container) {
+        container.querySelectorAll('.custom-option').forEach(o => {
+          if (o.dataset.value === symbol) {
+            o.classList.add('selected');
+          } else {
+            o.classList.remove('selected');
+          }
+        });
+      }
+    }
+    
+    const appEl = document.getElementById('app');
+    appEl.style.opacity = '0.3';
+    setTimeout(() => {
+      renderAll(stocksData[activeStock]);
+      appEl.style.opacity = '1';
+      document.getElementById('tab-overview').click();
+    }, 300);
+  } else {
+    alert(`หุ้น ${symbol} อยู่ในกลุ่มหุ้นแนะนำประจำวัน แต่วิถีคูเมืองวิเคราะห์แบบเจาะลึกเปิดให้ใช้งานเฉพาะหุ้นหลัก 10 ตัวแรกในระบบเทรดเท่านั้นครับ คุณสามารถกดวิเคราะห์หุ้นหลัก 10 ตัวผ่านกล่องรายชื่อสีเงินด้านบนได้เลยครับ`);
   }
 }
 
@@ -1643,355 +1674,6 @@ function initTooltips() {
     tooltip.classList.remove('show');
     tooltip.classList.add('hidden');
   });
-}
-
-function initSearch() {
-  const input = document.getElementById('stock-search-input');
-  if (!input) return;
-  
-  input.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-      performStockSearch(input.value.trim().toUpperCase());
-    }
-  });
-}
-
-async function performStockSearch(symbol) {
-  if (!symbol) return;
-  
-  const loading = document.getElementById('search-loading');
-  const loadingText = document.getElementById('search-loading-text');
-  
-  if (loading) {
-    loadingText.textContent = `SHU AI Engine: กำลังคำนวณและวิเคราะห์ข้อมูลหุ้น ${symbol}...`;
-    loading.classList.remove('hidden');
-  }
-  
-  try {
-    // 1. Fetch Chart data (1 year daily candles) via corsproxy.io
-    const chartUrl = `https://corsproxy.io/?url=https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1d&range=1y`;
-    const chartResponse = await fetch(chartUrl);
-    if (!chartResponse.ok) throw new Error("ไม่สามารถเชื่อมต่อฐานข้อมูลราคาหุ้นได้");
-    const chartData = await chartResponse.json();
-    
-    if (!chartData.chart || !chartData.chart.result || chartData.chart.result.length === 0) {
-      throw new Error("ไม่พบสัญลักษณ์หุ้นนี้บนตลาดหลักทรัพย์สหรัฐฯ");
-    }
-    
-    const result = chartData.chart.result[0];
-    const meta = result.meta;
-    const currentPrice = meta.regularMarketPrice;
-    const prevClose = meta.chartPreviousClose;
-    const change = currentPrice - prevClose;
-    const changePct = (change / prevClose) * 100;
-    
-    const quote = result.indicators.quote[0];
-    const closes = quote.close.filter(c => c !== null);
-    const volumes = quote.volume.filter(v => v !== null);
-    
-    if (closes.length === 0) throw new Error("ข้อมูลราคาไม่สมบูรณ์");
-    
-    // 2. Fetch QuoteSummary (PE, ROE, Sector, Margins, PEG) via corsproxy.io
-    const summaryUrl = `https://corsproxy.io/?url=https://query1.finance.yahoo.com/v10/finance/quoteSummary/${symbol}?modules=financialData,defaultKeyStatistics,assetProfile,summaryDetail`;
-    let quoteSummary = {};
-    try {
-      const summaryResponse = await fetch(summaryUrl);
-      if (summaryResponse.ok) {
-        const summaryData = await summaryResponse.json();
-        if (summaryData.quoteSummary && summaryData.quoteSummary.result && summaryData.quoteSummary.result.length > 0) {
-          quoteSummary = summaryData.quoteSummary.result[0];
-        }
-      }
-    } catch (e) {
-      console.log("Summary fetch failed, fallback to defaults", e);
-    }
-    
-    // Parse key stats
-    const sector = quoteSummary.assetProfile?.sector || "Technology";
-    const companyName = meta.longName || quoteSummary.assetProfile?.longName || symbol;
-    const industry = quoteSummary.assetProfile?.industry || "Software & Services";
-    
-    const roeRaw = quoteSummary.financialData?.returnOnEquity?.raw;
-    const roe = roeRaw ? (roeRaw * 100).toFixed(1) + "%" : "18.5%";
-    
-    const opMarginRaw = quoteSummary.financialData?.operatingMargins?.raw;
-    const opMargin = opMarginRaw ? (opMarginRaw * 100).toFixed(1) + "%" : "15.4%";
-    
-    const debtToEquityRaw = quoteSummary.financialData?.debtToEquity?.raw;
-    const debtToEquity = debtToEquityRaw ? (debtToEquityRaw / 100).toFixed(2) : "0.45";
-    
-    const currentRatioRaw = quoteSummary.financialData?.currentRatio?.raw;
-    const currentRatio = currentRatioRaw ? currentRatioRaw.toFixed(1) : "1.5";
-    
-    const pegRatioRaw = quoteSummary.defaultKeyStatistics?.pegRatio?.raw;
-    const pegRatio = pegRatioRaw ? pegRatioRaw.toFixed(2) : "1.45";
-    const betaRaw = quoteSummary.defaultKeyStatistics?.beta?.raw;
-    const beta = betaRaw ? betaRaw.toFixed(2) : "1.10";
-
-    
-    const forwardPE = quoteSummary.summaryDetail?.forwardPE?.raw || meta.trailingPE || 25.0;
-    const dividendYieldRaw = quoteSummary.summaryDetail?.dividendYield?.raw;
-    const dividendYield = dividendYieldRaw ? (dividendYieldRaw * 100).toFixed(2) + "%" : "0.00%";
-    const marketCapRaw = quoteSummary.summaryDetail?.marketCap?.raw || meta.marketCap;
-    const marketCap = marketCapRaw ? "$" + (marketCapRaw / 1e9).toFixed(1) + "B" : "N/A";
-    
-    // 3. Compute indicators in JS
-    function getEMA(data, period) {
-      if (data.length < period) return data[data.length - 1];
-      const k = 2 / (period + 1);
-      let ema = data.slice(0, period).reduce((s, c) => s + c, 0) / period;
-      for (let i = period; i < data.length; i++) {
-        ema = data[i] * k + ema * (1 - k);
-      }
-      return ema;
-    }
-    
-    function getRSI(data, period = 14) {
-      if (data.length < period + 1) return 50;
-      let gains = [], losses = [];
-      for (let i = 1; i < data.length; i++) {
-        const diff = data[i] - data[i-1];
-        gains.push(diff > 0 ? diff : 0);
-        losses.push(diff < 0 ? Math.abs(diff) : 0);
-      }
-      let avgGain = gains.slice(0, period).reduce((s, c) => s + c, 0) / period;
-      let avgLoss = losses.slice(0, period).reduce((s, c) => s + c, 0) / period;
-      for (let i = period; i < gains.length; i++) {
-        avgGain = (avgGain * (period - 1) + gains[i]) / period;
-        avgLoss = (avgLoss * (period - 1) + losses[i]) / period;
-      }
-      if (avgLoss === 0) return 100;
-      return 100 - (100 / (1 + (avgGain / avgLoss)));
-    }
-    
-    const ema20 = getEMA(closes, 20);
-    const ema50 = getEMA(closes, 50);
-    const ema200 = getEMA(closes, 200);
-    const rsi = getRSI(closes, 14);
-    
-    // Calculate Volume Profile POC (Point of Control)
-    function getVolumeProfilePOC(prices, volumes) {
-      const minPrice = Math.min(...prices);
-      const maxPrice = Math.max(...prices);
-      const numBins = 15;
-      const binSize = (maxPrice - minPrice) / numBins;
-      const bins = Array(numBins).fill(0);
-      for (let i = 0; i < prices.length; i++) {
-        const price = prices[i];
-        const vol = volumes[i] || 1;
-        const binIdx = Math.min(Math.floor((price - minPrice) / binSize), numBins - 1);
-        bins[binIdx] += vol;
-      }
-      const maxBinIdx = bins.indexOf(Math.max(...bins));
-      const poc = minPrice + (maxBinIdx + 0.5) * binSize;
-      const vah = minPrice + Math.min(maxBinIdx + 3, numBins - 1) * binSize;
-      const val = minPrice + Math.max(maxBinIdx - 3, 0) * binSize;
-      return { poc, vah, val };
-    }
-    
-    const { poc, vah, val } = getVolumeProfilePOC(closes, volumes);
-    
-    // Support and Resistance discovery based on pivot points
-    function getPivots(prices) {
-      const supports = [], resistances = [];
-      for (let i = 5; i < prices.length - 5; i++) {
-        const slice = prices.slice(i - 5, i + 6);
-        const p = prices[i];
-        if (p === Math.min(...slice)) {
-          supports.push(p);
-        }
-        if (p === Math.max(...slice)) {
-          resistances.push(p);
-        }
-      }
-      const s1 = supports.length > 0 ? supports[supports.length - 1] : currentPrice * 0.95;
-      const s2 = supports.length > 1 ? supports[supports.length - 2] : currentPrice * 0.90;
-      const r1 = resistances.length > 0 ? resistances[resistances.length - 1] : currentPrice * 1.05;
-      const r2 = resistances.length > 1 ? resistances[resistances.length - 2] : currentPrice * 1.10;
-      return { s1, s2, r1, r2 };
-    }
-    
-    const { s1, s2, r1, r2 } = getPivots(closes);
-    
-    // Average True Range (ATR) approximation for entry strategies
-    const pricesDiffs = [];
-    for (let i = 1; i < Math.min(20, closes.length); i++) {
-      pricesDiffs.push(Math.abs(closes[closes.length - i] - closes[closes.length - i - 1]));
-    }
-    const atr = pricesDiffs.reduce((s, c) => s + c, 0) / pricesDiffs.length || currentPrice * 0.03;
-    
-    // Compute Scores
-    let taScore = 5;
-    if (currentPrice > ema20) taScore += 1;
-    if (ema20 > ema50) taScore += 1;
-    if (currentPrice > ema200) taScore += 1;
-    if (ema50 > ema200) taScore += 1;
-    if (rsi < 35) taScore += 1;
-    if (rsi > 70) taScore -= 1;
-    taScore = Math.max(1, Math.min(10, taScore));
-    
-    let viScore = 5;
-    if (parseFloat(roe) > 15) viScore += 2;
-    if (parseFloat(opMargin) > 15) viScore += 1;
-    if (parseFloat(debtToEquity) < 1.0) viScore += 2;
-    if (parseFloat(pegRatio) < 1.5) viScore += 1;
-    viScore = Math.max(1, Math.min(10, viScore));
-    
-    const overallGrade = viScore >= 9 ? "A+" : (viScore >= 7 ? "A" : (viScore >= 5 ? "B" : "C"));
-    const verdict = taScore >= 7 ? "BUY" : (taScore >= 5 ? "BUY THE DIP" : "HOLD / WATCH");
-    const moat = viScore >= 8 ? "Wide" : (viScore >= 5 ? "Narrow" : "None");
-    const safety = (100 - (currentPrice / r1) * 100).toFixed(0) + "%";
-    
-    // 4. Algorithmic Thai Qualitative Compiler
-    const taCondition = taScore >= 7 ? "Strong Trend (แนวโน้มขาขึ้นแข็งแกร่ง)" : (taScore >= 5 ? "Buy the Dip (พักย่อเพื่อรอสะสม)" : "Reversal Setup (กำลังพยายามสร้างฐานสะสม)");
-    
-    const techSummaryText = `โครงสร้างราคาของ ${symbol} ในระยะสั้นมีโมเมนตัมเป็น ${currentPrice > ema20 ? "กระทิงและราคายืนเหนือ EMA 20" : "หมีเนื่องจากย่อตัวลงต่ำกว่า EMA 20"} โดยดัชนีกำลังสัมพัทธ์ RSI อยู่ที่ระดับ ${rsi.toFixed(1)} ซึ่งสะท้อนสภาวะ ${rsi > 70 ? "ซื้อมากเกินไป (Overbought) มีความเสี่ยงย่อตัวระยะสั้น" : (rsi < 35 ? "ขายมากเกินไป (Oversold) มีโอกาส Rebound กลับตัวสูง" : "การเคลื่อนไหวสะสมกำลังปกติ")} นอกจากนี้ จากมุมมอง Volume Profile พบจุดควบคุมหลัก POC อยู่ที่ $${poc.toFixed(2)} และกรอบราคาซื้อขายหลักอยู่ที่ช่วง $${val.toFixed(2)} ถึง $${vah.toFixed(2)}`;
-    
-    const viSummaryText = `ในเชิงปัจจัยพื้นฐาน ${symbol} โดดเด่นด้วยอัตราผลตอบแทนผู้ถือหุ้น ROE ที่ระดับ ${roe} และมีอัตรากำไรจากการดำเนินงาน (Operating Margin) สูงถึง ${opMargin} สะท้อนถึงประสิทธิภาพการแข่งขันและการทำกำไรที่ยอดเยี่ยม งบดุลมีความแข็งแกร่งโดยมีอัตราส่วนหนี้สินต่อทุนเพียง ${debtToEquity} เท่า และมีสภาพคล่องหมุนเวียน Current Ratio อยู่ที่ ${currentRatio} เท่า ซึ่งถือว่าปลอดภัยสูงมากสำหรับการลงทุนระยะยาว`;
-    
-    const thesisText = `${symbol} เป็นผู้นำในกลุ่มอุตสาหกรรม ${sector} ดำเนินธุรกิจในส่วน ${industry} ที่มีคูเมืองทางธุรกิจระดับ ${moat} มีแนวโน้มเติบโตอย่างมั่นคงในอนาคตด้วยความได้เปรียบทางเทคโนโลยีและการเข้าครอบครองตลาดหลักอย่างเหนียวแน่น`;
-    
-    const bull1 = `แนวโน้มการขยายตัวของรายได้ในส่วนธุรกิจหลักมีอัตราเติบโตสูงและต่อเนื่อง`;
-    const bull2 = `ประสิทธิภาพการทำกำไรขั้นต้นและกระแสเงินสดอิสระมีความแข็งแกร่งระดับแนวหน้าของอุตสาหกรรม`;
-    const bull3 = `กระแสการลงทุนในเทคโนโลยีและนวัตกรรมใหม่หนุนฐานกำไรในระยะยาว`;
-    
-    const bear1 = `ความเสี่ยงจากการแทรกแซงด้านกฎหมายและนโยบายความเป็นส่วนตัวหรือการผูกขาดในบางภูมิภาค`;
-    const bear2 = `ความผันผวนของงบการใช้จ่ายในการลงทุน CapEx เพื่อรองรับโครงสร้างพื้นฐานใหม่`;
-    const bear3 = `ความผันผวนของอัตราเงินเฟ้อหรือแรงกดดันด้านค่าจ้างแรงงานทั่วโลก`;
-    
-    const entryStrategy = `ทยอยสะสมในโซนแนวรับสำคัญช่วง $${(currentPrice - 0.5 * atr).toFixed(2)} - $${(currentPrice + 0.3 * atr).toFixed(2)} และแบ่งไม้ซื้อเพื่อควบคุมความเสี่ยงอย่างเป็นระบบ`;
-    
-    const generatedData = {
-      meta: {
-        symbol: symbol,
-        companyName: companyName,
-        industry: industry,
-        sector: sector,
-        currentPrice: currentPrice,
-        priceChange: change,
-        priceChangePct: changePct,
-        analysisDate: new Date().toISOString().split('T')[0]
-      },
-      overview: {
-        verdict: verdict,
-        verdictConfidence: "AI Computed",
-        taScore: taScore,
-        viScore: viScore,
-        moat: moat,
-        marginOfSafety: safety
-      },
-      technical: {
-        condition: taCondition,
-        trend: {
-          direction: currentPrice > ema50 ? "Uptrend" : "Downtrend",
-          strength: taScore >= 8 ? "Very Strong" : "Moderate",
-          timeframes: [
-            { tf: "Daily", bias: currentPrice > ema50 ? "bullish" : "bearish", note: `ราคายืนที่ $${currentPrice.toFixed(2)} เทียบกับเส้นเฉลี่ย EMA 50 วันที่ $${ema50.toFixed(2)}` },
-            { tf: "Weekly", bias: currentPrice > ema200 ? "bullish" : "neutral", note: `ภาพใหญ่ระยะยาวราคาประคองตัวเหนือ EMA 200 วันที่ $${ema200.toFixed(2)}` }
-          ]
-        },
-        levels: {
-          current: { label: "Current", price: currentPrice },
-          poc: { label: "POC", price: poc },
-          resistances: [{ label: "R1", price: r1 }, { label: "R2", price: r2 }],
-          supports: [{ label: "S1", price: s1 }, { label: "S2", price: s2 }],
-          vah: { label: "VAH", price: vah },
-          val: { label: "VAL", price: val }
-        },
-        entry: {
-          signal: verdict.includes("BUY") ? "BUY" : "HOLD",
-          entryZone: `$${(currentPrice - 0.5 * atr).toFixed(2)} - $${(currentPrice + 0.3 * atr).toFixed(2)}`,
-          stopLoss: `$${(poc * 0.95).toFixed(2)}`,
-          takeProfit1: `$${(currentPrice + 1.5 * atr).toFixed(2)}`,
-          takeProfit2: `$${(currentPrice + 3.0 * atr).toFixed(2)}`,
-          rrRatio: `1:${( (1.5 * atr) / (currentPrice - poc * 0.95) ).toFixed(1)}`,
-          confidence: taScore >= 7 ? "High" : "Medium"
-        }
-      },
-      fundamental: {
-        overallGrade: overallGrade,
-        gradeBreakdown: [
-          { label: "Growth Quality", score: Math.round(viScore * 9.5), color: "var(--accent-primary)" },
-          { label: "Capital Efficiency", score: Math.round(parseFloat(roe)), color: "#10b981" },
-          { label: "Balance Sheet Safety", score: Math.round(100 - parseFloat(debtToEquity) * 20), color: "#6366f1" }
-        ],
-        ratios: {
-          operatingMargin: opMargin,
-          roe: roe,
-          pegRatio: pegRatio,
-          debtToEquity: debtToEquity,
-          currentRatio: currentRatio
-        },
-        valuation: {
-          forwardPE: forwardPE.toFixed(1),
-          beta: beta || 1.1,
-          dividendYield: dividendYield,
-          marketCap: marketCap
-        },
-        cashFlow: {
-          operatingCashFlow: "N/A",
-          freeCashFlow: "N/A",
-          cashConversionCycle: "N/A"
-        }
-      },
-      thesis: {
-        statement: thesisText,
-        bullCase: [bull1, bull2, bull3],
-        bearCase: [bear1, bear2, bear3],
-        recommendation: {
-          action: verdict,
-          targetPrice: `$${r2.toFixed(2)}`,
-          timeHorizon: "1 ปี",
-          positionSize: taScore >= 7 ? "5-8%" : "3-5%",
-          entryStrategy: entryStrategy
-        },
-        keyRisks: [
-          "ความผันผวนเชิงนโยบายเศรษฐกิจและการเงินของประเทศต้นทางหลัก",
-          "การแข่งขันเชิงเทคโนโลยีและสิทธิบัตรจากคู่แข่งในระดับสากล"
-        ],
-        sources: ["Yahoo Finance Core Database", "SHU AI Technical Real-Time Engine"]
-      }
-    };
-    
-    stocksData[symbol] = generatedData;
-    
-    const selector = document.getElementById('stock-selector');
-    if (selector) {
-      let optionExists = false;
-      Array.from(selector.options).forEach(opt => {
-        if (opt.value === symbol) optionExists = true;
-      });
-      
-      if (!optionExists) {
-        const newOption = document.createElement('option');
-        newOption.value = symbol;
-        newOption.textContent = `${companyName} (${symbol})`;
-        selector.appendChild(newOption);
-        
-        const wrapper = selector.parentElement;
-        const oldCustomSelect = wrapper.querySelector('.custom-select-wrapper');
-        if (oldCustomSelect) oldCustomSelect.remove();
-        
-        initSelector();
-      }
-      
-      selector.value = symbol;
-      activeStock = symbol;
-    }
-    
-    const appEl = document.getElementById('app');
-    appEl.style.opacity = '0.3';
-    setTimeout(() => {
-      renderAll(generatedData);
-      appEl.style.opacity = '1';
-      document.getElementById('tab-overview').click();
-      if (loading) loading.classList.add('hidden');
-    }, 300);
-    
-  } catch (err) {
-    if (loading) loading.classList.add('hidden');
-    alert(`ข้อผิดพลาดในการวิเคราะห์: ${err.message}`);
-  }
 }
 
 function renderAll(data) {
@@ -2053,106 +1735,199 @@ function renderOverview(meta, overview) {
   document.querySelector('.vi-fill').style.strokeDasharray = `${viPercent}, 100`;
 }
 
-function renderTechnical(tech) {
-  document.getElementById('ta-signal-badge').textContent = tech.entry.signal;
-  document.getElementById('ta-signal-badge').className = 'card-badge ' + tech.entry.signal.toLowerCase();
-  
-  document.getElementById('ta-summary-content').innerHTML = `
-    <div class="ta-condition-block">
-      <span class="ta-condition-label">TA Condition:</span>
-      <span class="ta-condition-val" style="color: var(--color-bullish); font-weight: 700;">${tech.condition}</span>
+function renderTechnical(ta) {
+  // Trend
+  const arrow = document.getElementById('trend-arrow');
+  arrow.className = 'trend-arrow ' + (ta.trend.direction.toLowerCase().includes('up') ? 'up' : ta.trend.direction.toLowerCase().includes('down') ? 'down' : 'sideways');
+  document.getElementById('trend-direction').textContent = ta.trend.direction;
+  document.getElementById('trend-strength').textContent = `Strength: ${ta.trend.strength}`;
+
+  // Timeframes
+  const tfContainer = document.getElementById('trend-timeframes');
+  tfContainer.innerHTML = ta.trend.timeframes.map(tf => `
+    <div class="tf-chip ${tf.bias}">
+      <span>${tf.bias === 'bullish' ? '▲' : tf.bias === 'bearish' ? '▼' : '◆'}</span>
+      ${tf.tf}: ${tf.note}
     </div>
-    <div class="ta-description-text" style="margin-top:var(--space-sm); font-size:13px; line-height:1.6; color:var(--text-secondary)">
-      ${tech.trend.timeframes[0].note} และ ${tech.trend.timeframes[1].note}
+  `).join('');
+
+  // Levels
+  let allLevels = [
+    { ...ta.levels.vah, type: 'vah' },
+    { ...ta.levels.current, type: 'current' },
+    { ...ta.levels.poc, type: 'poc' },
+    { ...ta.levels.val, type: 'val' }
+  ];
+  if(ta.levels.resistances) {
+      allLevels = [...ta.levels.resistances.map(l => ({ ...l, type: 'resistance' })), ...allLevels];
+  }
+  if(ta.levels.supports) {
+      allLevels = [...allLevels, ...ta.levels.supports.map(l => ({ ...l, type: 'support' }))];
+  }
+
+  const maxPrice = Math.max(...allLevels.map(l => l.price));
+  const minPrice = Math.min(...allLevels.map(l => l.price));
+  const range = maxPrice - minPrice;
+
+  document.getElementById('levels-chart').innerHTML = allLevels.map(l => {
+    const pct = ((l.price - minPrice) / range) * 100;
+    const barClass = l.type === 'resistance' ? 'resistance-bar' :
+                     l.type === 'support' ? 'support-bar' :
+                     l.type === 'poc' ? 'poc-bar' : 'current-bar';
+    return `
+      <div class="level-row">
+        <span class="level-label ${l.type}">${l.label}</span>
+        <span class="level-price">${l.price === 'N/A' || !l.price ? 'N/A' : '$' + l.price.toFixed(2)}</span>
+        <div class="level-bar-container">
+          <div class="level-bar ${barClass}" style="width: ${pct}%"></div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Entry
+  const signalEl = document.getElementById('entry-signal');
+  signalEl.textContent = ta.entry.signal;
+  signalEl.className = 'entry-signal ' + (ta.entry.signal.toLowerCase().includes('buy') ? 'buy' : 'wait');
+
+  document.getElementById('entry-grid').innerHTML = `
+    <div class="entry-item">
+      <div class="entry-item-label">Entry Zone</div>
+      <div class="entry-item-value entry-zone">${ta.entry.entryZone}</div>
+    </div>
+    <div class="entry-item">
+      <div class="entry-item-label">Stop Loss</div>
+      <div class="entry-item-value stop-loss">${ta.entry.stopLoss}</div>
+    </div>
+    <div class="entry-item">
+      <div class="entry-item-label">Take Profit</div>
+      <div class="entry-item-value take-profit">${ta.entry.takeProfit1}</div>
+    </div>
+    <div class="entry-item">
+      <div class="entry-item-label">R:R Ratio</div>
+      <div class="entry-item-value rr-ratio">${ta.entry.rrRatio}</div>
     </div>
   `;
 
-  // Core indicators card
-  document.getElementById('indicator-trend').textContent = tech.trend.direction;
-  document.getElementById('indicator-strength').textContent = tech.trend.strength;
-  
-  // Levels Table
-  const rows = [
-    tech.levels.vah,
-    tech.levels.poc,
-    tech.levels.val
-  ];
-  renderLevelsTable('vol-profile-table', rows);
+  // Confluences
+  const confluences = ta.confluences || [];
+  document.getElementById('entry-confluences').innerHTML = confluences.map(c => `
+    <div class="confluence-chip ${c.confirmed ? 'confirmed' : ''}">
+      <span class="confluence-dot"></span>
+      ${c.name}
+    </div>
+  `).join('');
 
-  // Key Pivots Table
-  const pivotRows = [
-    tech.levels.resistances[1],
-    tech.levels.resistances[0],
-    tech.levels.current,
-    tech.levels.supports[0],
-    tech.levels.supports[1]
-  ];
-  renderLevelsTable('pivots-table', pivotRows);
-
-  // Trading plan card
-  document.getElementById('plan-entry').textContent = tech.entry.entryZone;
-  document.getElementById('plan-stop').textContent = tech.entry.stopLoss;
-  document.getElementById('plan-tp1').textContent = tech.entry.takeProfit1;
-  document.getElementById('plan-tp2').textContent = tech.entry.takeProfit2;
-  document.getElementById('plan-rr').textContent = tech.entry.rrRatio;
-  document.getElementById('plan-confidence').textContent = tech.entry.confidence;
-}
-
-function renderLevelsTable(containerId, rows) {
-  if(!document.getElementById(containerId)) return;
-  document.getElementById(containerId).innerHTML = `
-    <table class="levels-table">
-      <tbody>
-        ${rows.map(r => {
-          const isCurrent = r.label.toLowerCase() === 'current';
-          return `
-            <tr class="${isCurrent ? 'row-current' : ''}">
-              <td class="level-label">${r.label}</td>
-              <td class="level-value">${r.price === 'N/A' || !r.price ? 'N/A' : '$' + r.price.toFixed(2)}</td>
-            </tr>
-          `;
-        }).join('')}
-      </tbody>
-    </table>
+  // Risk
+  const rsk = ta.risk || {
+    positionSize: 'N/A',
+    riskPct: 'N/A',
+    riskReward: 'N/A',
+    trailingStop: 'N/A',
+    maxLoss: 'N/A',
+    atr14: 'N/A'
+  };
+  document.getElementById('risk-visual').innerHTML = `
+    <div class="risk-item">
+      <div class="risk-item-label">Position Size</div>
+      <div class="risk-item-value">${rsk.positionSize}</div>
+    </div>
+    <div class="risk-item">
+      <div class="risk-item-label">Risk per Trade</div>
+      <div class="risk-item-value" style="color:var(--color-bearish)">${rsk.riskPct}</div>
+    </div>
+    <div class="risk-item">
+      <div class="risk-item-label">Risk:Reward</div>
+      <div class="risk-item-value" style="color:var(--color-bullish)">${rsk.riskReward}</div>
+    </div>
+    <div class="risk-item">
+      <div class="risk-item-label">Trailing Stop</div>
+      <div class="risk-item-value">${rsk.trailingStop}</div>
+    </div>
+    <div class="risk-item">
+      <div class="risk-item-label">Max Loss/Share</div>
+      <div class="risk-item-value" style="color:var(--color-bearish)">${rsk.maxLoss}</div>
+    </div>
+    <div class="risk-item">
+      <div class="risk-item-label">ATR (14)</div>
+      <div class="risk-item-value">${rsk.atr14}</div>
+    </div>
   `;
+
+  // Rationale
+  document.getElementById('ta-rationale-content').innerHTML = ta.rationale + (ta.risks || "");
 }
 
 function renderFundamental(fund) {
-  document.getElementById('vi-signal-badge').textContent = fund.overallGrade + ' Grade';
-  document.getElementById('vi-signal-badge').className = 'card-badge grade-' + fund.overallGrade.substring(0, 1).toLowerCase();
+  let incomeRows = fund.incomeStatement;
+  let balanceRows = fund.balanceSheet;
+  let cashflowRows = fund.cashflow;
+  let valuationRows = fund.valuation;
 
-  // Dynamic Value Summary in Thai
-  const viSummaryParagraph = `โครงสร้างปัจจัยพื้นฐานทางการเงินประเมินในระดับเกรด **${fund.overallGrade}** มีอัตรากำไรจากการดำเนินงาน (Operating Margin) อยู่ที่ **${fund.ratios.operatingMargin}** ร่วมกับผลตอบแทนส่วนผู้ถือหุ้น ROE ที่ระดับ **${fund.ratios.roe}** ด้านระดับหนี้สินต่อทุนประเมินได้ที่ **${fund.ratios.debtToEquity}** เท่า มีอัตราสภาพคล่องเป็น **${fund.ratios.currentRatio}** เท่า ซึ่งถือว่าอยู่ในเกณฑ์ปลอดภัยสูงมากในการลงทุนระยะยาว`;
-  document.getElementById('vi-summary-content').innerHTML = `
-    <p class="vi-summary-text" style="font-size:13px; line-height:1.6; color:var(--text-secondary)">
-      ${viSummaryParagraph}
-    </p>
-  `;
+  // Support growth stocks flat dictionaries
+  if (fund.ratios || fund.cashFlow) {
+    const ratios = fund.ratios || {};
+    const cf = fund.cashFlow || fund.cashflow || {};
+    const val = fund.valuation || {};
 
-  // Quality Ratios Table
-  const ratioRows = [
-    { metric: "Operating Margin", value: fund.ratios.operatingMargin, grade: parseFloat(fund.ratios.operatingMargin) > 15 ? "A" : "B" },
-    { metric: "Return on Equity (ROE)", value: fund.ratios.roe, grade: parseFloat(fund.ratios.roe) > 15 ? "A" : "B" },
-    { metric: "PEG Ratio", value: fund.ratios.pegRatio, grade: parseFloat(fund.ratios.pegRatio) < 1.5 ? "A" : "C" },
-    { metric: "Debt to Equity", value: fund.ratios.debtToEquity, grade: parseFloat(fund.ratios.debtToEquity) < 1.0 ? "A" : "B" },
-    { metric: "Current Ratio", value: fund.ratios.currentRatio, grade: parseFloat(fund.ratios.currentRatio) > 1.2 ? "A" : "B" }
-  ];
-  renderFinTable('ratios-table-container', ratioRows);
+    incomeRows = [
+      { metric: 'Operating Margin', value: ratios.operatingMargin || 'N/A', grade: 'A' },
+      { metric: 'ROE (Return on Equity)', value: ratios.roe || 'N/A', grade: 'A' },
+      { metric: 'PEG Ratio', value: ratios.pegRatio || 'N/A', grade: 'B' }
+    ];
 
-  // Valuation metrics table
-  const valRows = [
-    { metric: "Forward P/E", value: fund.valuation.forwardPE, grade: parseFloat(fund.valuation.forwardPE) < 25 ? "A" : "B" },
-    { metric: "Beta", value: fund.valuation.beta, grade: "A" },
-    { metric: "Dividend Yield", value: fund.valuation.dividendYield, grade: "A" },
-    { metric: "Market Cap", value: fund.valuation.marketCap, grade: "A" }
-  ];
-  renderFinTable('valuation-table-container', valRows);
+    balanceRows = [
+      { metric: 'Debt to Equity', value: ratios.debtToEquity || 'N/A', grade: 'A' },
+      { metric: 'Current Ratio', value: ratios.currentRatio || 'N/A', grade: 'B' }
+    ];
+
+    cashflowRows = [
+      { metric: 'Operating Cash Flow', value: cf.operatingCashFlow || 'N/A', grade: 'A' },
+      { metric: 'Free Cash Flow', value: cf.freeCashFlow || 'N/A', grade: 'A' },
+      { metric: 'Cash Conversion Cycle', value: cf.cashConversionCycle || 'N/A', grade: 'A' }
+    ];
+
+    if (typeof val === 'object' && !Array.isArray(val)) {
+      valuationRows = [
+        { metric: 'Forward P/E', value: val.forwardPE || 'N/A', grade: 'B' },
+        { metric: 'Beta', value: val.beta || 'N/A', grade: 'A' },
+        { metric: 'Dividend Yield', value: val.dividendYield || 'N/A', grade: 'A' },
+        { metric: 'Market Cap', value: val.marketCap || 'N/A', grade: 'A' }
+      ];
+    }
+  }
+
+  // Tables
+  renderFinTable('income-table', incomeRows);
+  renderFinTable('balance-table', balanceRows);
+  renderFinTable('cashflow-table', cashflowRows);
+  renderFinTable('valuation-table', valuationRows);
+
+  // Moat
+  const moatItems = (fund.moat && fund.moat.items) || [];
+  if (moatItems.length === 0) {
+    document.getElementById('moat-content').innerHTML = '<p class="placeholder-text" style="text-align:center;padding:20px;color:var(--color-text-muted);">🛡️ การวิเคราะห์คูเมืองเชิงคุณภาพเจาะลึก เปิดให้ใช้งานเฉพาะหุ้นหลัก 10 ตัวแรกเท่านั้นครับ</p>';
+  } else {
+    document.getElementById('moat-content').innerHTML = moatItems.map(m => `
+      <div class="moat-item">
+        <div class="moat-badge">${m.icon}</div>
+        <div class="moat-item-info">
+          <h4>${m.name}</h4>
+          <p>${m.description}</p>
+          <div class="moat-strength-bar">
+            <div class="moat-strength-fill" style="width: ${m.strength}%"></div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
 
   // Grade
-  document.getElementById('grade-letter').textContent = fund.overallGrade;
-  document.getElementById('grade-description').textContent = fund.overallGrade.includes('A') ? 'Exceptional Financial Position' : 'Excellent Financial Health';
+  document.getElementById('grade-letter').textContent = fund.overallGrade || 'N/A';
+  document.getElementById('grade-description').textContent = (fund.overallGrade && fund.overallGrade.includes('A')) ? 'Exceptional Financial Position' : 'Excellent Financial Health';
 
-  document.getElementById('grade-breakdown').innerHTML = fund.gradeBreakdown.map(g => `
+  const breakdown = fund.gradeBreakdown || [];
+  document.getElementById('grade-breakdown').innerHTML = breakdown.map(g => `
     <div class="grade-row">
       <span class="grade-row-label">${g.label}</span>
       <div class="grade-row-bar">
@@ -2165,6 +1940,10 @@ function renderFundamental(fund) {
 
 function renderFinTable(containerId, rows) {
   if(!document.getElementById(containerId)) return;
+  if (!rows || !Array.isArray(rows)) {
+    document.getElementById(containerId).innerHTML = '<p class="placeholder-text" style="text-align:center;padding:15px;color:var(--color-text-muted);">ไม่มีข้อมูลการเงินในส่วนนี้</p>';
+    return;
+  }
   document.getElementById(containerId).innerHTML = `
     <table class="fin-table">
       <thead>
