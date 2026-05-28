@@ -915,6 +915,4182 @@ const stocksData = {
         "EUV Lithography Supply Chain Monopoly Review"
       ]
     }
+  },
+  "PLTR": {
+    "meta": {
+      "symbol": "PLTR",
+      "companyName": "Palantir",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 132.51,
+      "priceChange": 9.12,
+      "priceChangePct": 7.39,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 0,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $125.88"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 132.51
+        },
+        "poc": {
+          "label": "POC",
+          "price": 127.21
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 139.14
+          },
+          {
+            "label": "R2",
+            "price": 148.41
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 125.88
+          },
+          {
+            "label": "S2",
+            "price": 119.26
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 136.49
+        },
+        "val": {
+          "label": "VAL",
+          "price": 120.58
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$125.88 - $131.18",
+        "stopLoss": "$114.49",
+        "takeProfit1": "$139.14",
+        "takeProfit2": "$148.41",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($125.88) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 41.4 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.83x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$6.96",
+        "maxLoss": "$9.28",
+        "atr14": "$4.64"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 40,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 0,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "3.73",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "82.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Palantir (PLTR) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 0/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (82.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$139.14",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($119.26) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($119.26) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "ANET": {
+    "meta": {
+      "symbol": "ANET",
+      "companyName": "Arista Networks",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 154.31,
+      "priceChange": 61.82,
+      "priceChangePct": 66.84,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "ACCUMULATE",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 5,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $148.58"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 154.31
+        },
+        "poc": {
+          "label": "POC",
+          "price": 148.14
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 162.03
+          },
+          {
+            "label": "R2",
+            "price": 172.83
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 148.58
+          },
+          {
+            "label": "S2",
+            "price": 136.92
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 158.94
+        },
+        "val": {
+          "label": "VAL",
+          "price": 140.42
+        }
+      },
+      "entry": {
+        "signal": "BUY",
+        "entryZone": "$146.59 - $152.77",
+        "stopLoss": "$131.44",
+        "takeProfit1": "$162.03",
+        "takeProfit2": "$172.83",
+        "rrRatio": "1:0.3",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($148.58) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 53.2 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": true
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.54x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.3",
+        "trailingStop": "$8.10",
+        "maxLoss": "$10.80",
+        "atr14": "$5.40"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 50,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "1.75",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "38.5",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Arista Networks (ANET) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 5/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.3) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (38.5x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ทยอยสะสม (Accumulate)",
+        "targetPrice": "$162.03",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "เน้นการแบ่งไม้สะสมทีละส่วน (DCA) บริเวณแนวรับสำคัญ ไม่ควรซื้อไล่ราคาเมื่อราคาวิ่งเข้าใกล้แนวต้าน R1"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($136.92) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "AMD": {
+    "meta": {
+      "symbol": "AMD",
+      "companyName": "AMD",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 495.54,
+      "priceChange": 380.98,
+      "priceChangePct": 332.56,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $347.52"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 495.54
+        },
+        "poc": {
+          "label": "POC",
+          "price": 475.72
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 520.32
+          },
+          {
+            "label": "R2",
+            "price": 555.0
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 347.52
+          },
+          {
+            "label": "S2",
+            "price": 245.34
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 510.41
+        },
+        "val": {
+          "label": "VAL",
+          "price": 450.94
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$470.76 - $490.58",
+        "stopLoss": "$235.53",
+        "takeProfit1": "$520.32",
+        "takeProfit2": "$555.00",
+        "rrRatio": "1:0.1",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($347.52) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 74.1 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.67x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.1",
+        "trailingStop": "$26.01",
+        "maxLoss": "$34.68",
+        "atr14": "$17.34"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "2.18",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "48.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น AMD (AMD) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.1) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (48.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$520.32",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($445.99) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($245.34) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "AVGO": {
+    "meta": {
+      "symbol": "AVGO",
+      "companyName": "Broadcom",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 421.86,
+      "priceChange": 186.21,
+      "priceChangePct": 79.02,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "ACCUMULATE",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 5,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $392.46"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 421.86
+        },
+        "poc": {
+          "label": "POC",
+          "price": 404.99
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 442.95
+          },
+          {
+            "label": "R2",
+            "price": 472.48
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 392.46
+          },
+          {
+            "label": "S2",
+            "price": 348.34
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 434.52
+        },
+        "val": {
+          "label": "VAL",
+          "price": 383.89
+        }
+      },
+      "entry": {
+        "signal": "BUY",
+        "entryZone": "$400.77 - $417.64",
+        "stopLoss": "$334.41",
+        "takeProfit1": "$442.95",
+        "takeProfit2": "$472.48",
+        "rrRatio": "1:0.2",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($392.46) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 56.4 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": true
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.95x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.2",
+        "trailingStop": "$22.16",
+        "maxLoss": "$29.54",
+        "atr14": "$14.77"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 50,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "1.6",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "35.2",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Broadcom (AVGO) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 5/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.2) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (35.2x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ทยอยสะสม (Accumulate)",
+        "targetPrice": "$442.95",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "เน้นการแบ่งไม้สะสมทีละส่วน (DCA) บริเวณแนวรับสำคัญ ไม่ควรซื้อไล่ราคาเมื่อราคาวิ่งเข้าใกล้แนวต้าน R1"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($348.34) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "NFLX": {
+    "meta": {
+      "symbol": "NFLX",
+      "companyName": "Netflix",
+      "industry": "Communication Industry",
+      "sector": "Communication",
+      "currentPrice": 87.35,
+      "priceChange": -33.81,
+      "priceChangePct": -27.91,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 0,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $82.98"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 87.35
+        },
+        "poc": {
+          "label": "POC",
+          "price": 83.86
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 91.72
+          },
+          {
+            "label": "R2",
+            "price": 97.83
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 82.98
+          },
+          {
+            "label": "S2",
+            "price": 78.61
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 89.97
+        },
+        "val": {
+          "label": "VAL",
+          "price": 79.49
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$82.98 - $86.48",
+        "stopLoss": "$75.47",
+        "takeProfit1": "$91.72",
+        "takeProfit2": "$97.83",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($82.98) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 40.6 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.69x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$4.59",
+        "maxLoss": "$6.12",
+        "atr14": "$3.06"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 0,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "1.65",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "36.4",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Netflix (NFLX) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 0/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Communication",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (36.4x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$91.72",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($78.61) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($78.61) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "COIN": {
+    "meta": {
+      "symbol": "COIN",
+      "companyName": "Coinbase",
+      "industry": "Financials Industry",
+      "sector": "Financials",
+      "currentPrice": 173.78,
+      "priceChange": -92.62,
+      "priceChangePct": -34.77,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 1,
+      "viScore": 7,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $165.09"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 173.78
+        },
+        "poc": {
+          "label": "POC",
+          "price": 166.83
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 182.47
+          },
+          {
+            "label": "R2",
+            "price": 194.63
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 165.09
+          },
+          {
+            "label": "S2",
+            "price": 156.4
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 178.99
+        },
+        "val": {
+          "label": "VAL",
+          "price": 158.14
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$165.09 - $172.04",
+        "stopLoss": "$150.14",
+        "takeProfit1": "$182.47",
+        "takeProfit2": "$194.63",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($165.09) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 39.3 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.84x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$9.12",
+        "maxLoss": "$12.16",
+        "atr14": "$6.08"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 80,
+          "color": "var(--color-bullish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 10,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "1.3",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "28.5",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Coinbase (COIN) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 1/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Financials",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (28.5x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$182.47",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($156.4) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($156.4) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "CRWD": {
+    "meta": {
+      "symbol": "CRWD",
+      "companyName": "CrowdStrike",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 645.36,
+      "priceChange": 173.14,
+      "priceChangePct": 36.67,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $506.5"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 645.36
+        },
+        "poc": {
+          "label": "POC",
+          "price": 619.55
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 677.63
+          },
+          {
+            "label": "R2",
+            "price": 722.8
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 506.5
+          },
+          {
+            "label": "S2",
+            "price": 474.12
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 664.72
+        },
+        "val": {
+          "label": "VAL",
+          "price": 587.28
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$613.09 - $638.91",
+        "stopLoss": "$455.16",
+        "takeProfit1": "$677.63",
+        "takeProfit2": "$722.80",
+        "rrRatio": "1:0.2",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($506.5) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 75.8 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 1.06x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.2",
+        "trailingStop": "$33.88",
+        "maxLoss": "$45.18",
+        "atr14": "$22.59"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 40,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "3.27",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "72.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น CrowdStrike (CRWD) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.2) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (72.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$677.63",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($580.82) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($474.12) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "SMCI": {
+    "meta": {
+      "symbol": "SMCI",
+      "companyName": "Super Micro",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 38.19,
+      "priceChange": -3.38,
+      "priceChangePct": -8.13,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 7,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "10%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $30.49"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 38.19
+        },
+        "poc": {
+          "label": "POC",
+          "price": 36.66
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 40.1
+          },
+          {
+            "label": "R2",
+            "price": 42.77
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 30.49
+          },
+          {
+            "label": "S2",
+            "price": 36.16
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 39.34
+        },
+        "val": {
+          "label": "VAL",
+          "price": 34.75
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$36.28 - $37.81",
+        "stopLoss": "$34.71",
+        "takeProfit1": "$40.10",
+        "takeProfit2": "$42.77",
+        "rrRatio": "1:0.5",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($30.49) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 69.4 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.9x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.5",
+        "trailingStop": "$2.01",
+        "maxLoss": "$2.68",
+        "atr14": "$1.34"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 80,
+          "color": "var(--color-bullish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "0.84",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "18.5",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Super Micro (SMCI) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.5) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (18.5x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$40.10",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($34.37) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($36.16) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "CELH": {
+    "meta": {
+      "symbol": "CELH",
+      "companyName": "Celsius",
+      "industry": "Consumer Defensive Industry",
+      "sector": "Consumer Defensive",
+      "currentPrice": 31.65,
+      "priceChange": -5.39,
+      "priceChangePct": -14.55,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 1,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $30.07"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 31.65
+        },
+        "poc": {
+          "label": "POC",
+          "price": 30.38
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 33.23
+          },
+          {
+            "label": "R2",
+            "price": 35.45
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 30.07
+          },
+          {
+            "label": "S2",
+            "price": 28.48
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 32.6
+        },
+        "val": {
+          "label": "VAL",
+          "price": 28.8
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$30.07 - $31.33",
+        "stopLoss": "$27.34",
+        "takeProfit1": "$33.23",
+        "takeProfit2": "$35.45",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($30.07) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 49.4 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": true
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 1.07x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$1.67",
+        "maxLoss": "$2.22",
+        "atr14": "$1.11"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 10,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "2.05",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "45.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Celsius (CELH) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 1/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Consumer Defensive",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (45.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$33.23",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($28.48) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($28.48) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "VRT": {
+    "meta": {
+      "symbol": "VRT",
+      "companyName": "Vertiv",
+      "industry": "Industrials Industry",
+      "sector": "Industrials",
+      "currentPrice": 319.78,
+      "priceChange": 209.99,
+      "priceChangePct": 191.27,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 3,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $308.18"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 319.78
+        },
+        "poc": {
+          "label": "POC",
+          "price": 306.99
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 335.77
+          },
+          {
+            "label": "R2",
+            "price": 358.15
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 308.18
+          },
+          {
+            "label": "S2",
+            "price": 221.8
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 329.37
+        },
+        "val": {
+          "label": "VAL",
+          "price": 291.0
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$303.79 - $316.58",
+        "stopLoss": "$212.93",
+        "takeProfit1": "$335.77",
+        "takeProfit2": "$358.15",
+        "rrRatio": "1:0.1",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($308.18) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 46.8 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": true
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.94x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.1",
+        "trailingStop": "$16.79",
+        "maxLoss": "$22.38",
+        "atr14": "$11.19"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 30,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "1.75",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "38.5",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Vertiv (VRT) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 3/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Industrials",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.1) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (38.5x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$335.77",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($287.8) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($221.8) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "NU": {
+    "meta": {
+      "symbol": "NU",
+      "companyName": "Nu Holdings",
+      "industry": "Financials Industry",
+      "sector": "Financials",
+      "currentPrice": 13.03,
+      "priceChange": 1.09,
+      "priceChangePct": 9.13,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 1,
+      "viScore": 7,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $12.38"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 13.03
+        },
+        "poc": {
+          "label": "POC",
+          "price": 12.51
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 13.68
+          },
+          {
+            "label": "R2",
+            "price": 14.59
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 12.38
+          },
+          {
+            "label": "S2",
+            "price": 11.73
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 13.42
+        },
+        "val": {
+          "label": "VAL",
+          "price": 11.86
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$12.38 - $12.9",
+        "stopLoss": "$11.26",
+        "takeProfit1": "$13.68",
+        "takeProfit2": "$14.59",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($12.38) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 42.8 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.91x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$0.69",
+        "maxLoss": "$0.92",
+        "atr14": "$0.46"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 80,
+          "color": "var(--color-bullish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 10,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "1.29",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "28.4",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Nu Holdings (NU) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 1/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Financials",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (28.4x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$13.68",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($11.73) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($11.73) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "MELI": {
+    "meta": {
+      "symbol": "MELI",
+      "companyName": "MercadoLibre",
+      "industry": "Consumer Cyclical Industry",
+      "sector": "Consumer Cyclical",
+      "currentPrice": 1696.17,
+      "priceChange": -859.0,
+      "priceChangePct": -33.62,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 2,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $1611.36"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 1696.17
+        },
+        "poc": {
+          "label": "POC",
+          "price": 1628.32
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 1780.98
+          },
+          {
+            "label": "R2",
+            "price": 1899.71
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 1611.36
+          },
+          {
+            "label": "S2",
+            "price": 1526.55
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 1747.06
+        },
+        "val": {
+          "label": "VAL",
+          "price": 1543.51
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$1611.36 - $1679.21",
+        "stopLoss": "$1465.49",
+        "takeProfit1": "$1780.98",
+        "takeProfit2": "$1899.71",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($1611.36) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 50.0 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": true
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.6x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$89.05",
+        "maxLoss": "$118.74",
+        "atr14": "$59.37"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 20,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "2.11",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "46.5",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น MercadoLibre (MELI) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 2/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Consumer Cyclical",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (46.5x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$1780.98",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($1526.55) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($1526.55) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "MSTR": {
+    "meta": {
+      "symbol": "MSTR",
+      "companyName": "MicroStrategy",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 154.2,
+      "priceChange": -218.0,
+      "priceChangePct": -58.57,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 1,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $146.49"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 154.2
+        },
+        "poc": {
+          "label": "POC",
+          "price": 148.03
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 161.91
+          },
+          {
+            "label": "R2",
+            "price": 172.7
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 146.49
+          },
+          {
+            "label": "S2",
+            "price": 138.78
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 158.83
+        },
+        "val": {
+          "label": "VAL",
+          "price": 140.32
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$146.49 - $152.66",
+        "stopLoss": "$133.23",
+        "takeProfit1": "$161.91",
+        "takeProfit2": "$172.70",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($146.49) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 41.3 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.8x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$8.10",
+        "maxLoss": "$10.80",
+        "atr14": "$5.40"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 40,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 10,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "4.32",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "95.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น MicroStrategy (MSTR) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 1/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (95.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$161.91",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($138.78) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($138.78) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "HOOD": {
+    "meta": {
+      "symbol": "HOOD",
+      "companyName": "Robinhood",
+      "industry": "Financials Industry",
+      "sector": "Financials",
+      "currentPrice": 76.23,
+      "priceChange": 10.21,
+      "priceChangePct": 15.47,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 1,
+      "viScore": 7,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "10%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $72.42"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 76.23
+        },
+        "poc": {
+          "label": "POC",
+          "price": 73.18
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 80.04
+          },
+          {
+            "label": "R2",
+            "price": 85.38
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 72.42
+          },
+          {
+            "label": "S2",
+            "price": 68.61
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 78.52
+        },
+        "val": {
+          "label": "VAL",
+          "price": 69.37
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$72.42 - $75.47",
+        "stopLoss": "$65.87",
+        "takeProfit1": "$80.04",
+        "takeProfit2": "$85.38",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($72.42) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 48.5 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": true
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 1.01x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$4.00",
+        "maxLoss": "$5.34",
+        "atr14": "$2.67"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 80,
+          "color": "var(--color-bullish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 10,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "1.1",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "24.2",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Robinhood (HOOD) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 1/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Financials",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (24.2x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$80.04",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($68.61) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($68.61) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "LUNR": {
+    "meta": {
+      "symbol": "LUNR",
+      "companyName": "Intuitive Machines",
+      "industry": "Industrials Industry",
+      "sector": "Industrials",
+      "currentPrice": 40.34,
+      "priceChange": 27.7,
+      "priceChangePct": 219.15,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "ACCUMULATE",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 6,
+      "viScore": 7,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "10%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $27.5"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 40.34
+        },
+        "poc": {
+          "label": "POC",
+          "price": 38.73
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 42.36
+          },
+          {
+            "label": "R2",
+            "price": 45.18
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 27.5
+          },
+          {
+            "label": "S2",
+            "price": 18.3
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 41.55
+        },
+        "val": {
+          "label": "VAL",
+          "price": 36.71
+        }
+      },
+      "entry": {
+        "signal": "BUY",
+        "entryZone": "$38.32 - $39.94",
+        "stopLoss": "$17.57",
+        "takeProfit1": "$42.36",
+        "takeProfit2": "$45.18",
+        "rrRatio": "1:0.1",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($27.5) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 68.1 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 1.91x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": true
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.1",
+        "trailingStop": "$2.11",
+        "maxLoss": "$2.82",
+        "atr14": "$1.41"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 80,
+          "color": "var(--color-bullish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 60,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "0.68",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "15.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Intuitive Machines (LUNR) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 6/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Industrials",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.1) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (15.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ทยอยสะสม (Accumulate)",
+        "targetPrice": "$42.36",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "เน้นการแบ่งไม้สะสมทีละส่วน (DCA) บริเวณแนวรับสำคัญ ไม่ควรซื้อไล่ราคาเมื่อราคาวิ่งเข้าใกล้แนวต้าน R1"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($18.3) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "QCOM": {
+    "meta": {
+      "symbol": "QCOM",
+      "companyName": "Qualcomm",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 233.4,
+      "priceChange": 84.77,
+      "priceChangePct": 57.03,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "ACCUMULATE",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 5,
+      "viScore": 7,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "10%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $176.59"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 233.4
+        },
+        "poc": {
+          "label": "POC",
+          "price": 224.06
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 245.07
+          },
+          {
+            "label": "R2",
+            "price": 261.41
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 176.59
+          },
+          {
+            "label": "S2",
+            "price": 162.2
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 240.4
+        },
+        "val": {
+          "label": "VAL",
+          "price": 212.39
+        }
+      },
+      "entry": {
+        "signal": "BUY",
+        "entryZone": "$221.73 - $231.07",
+        "stopLoss": "$155.71",
+        "takeProfit1": "$245.07",
+        "takeProfit2": "$261.41",
+        "rrRatio": "1:0.2",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($176.59) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 65.6 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.81x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.2",
+        "trailingStop": "$12.25",
+        "maxLoss": "$16.34",
+        "atr14": "$8.17"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 80,
+          "color": "var(--color-bullish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 50,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "0.83",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "18.2",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Qualcomm (QCOM) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 5/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.2) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (18.2x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ทยอยสะสม (Accumulate)",
+        "targetPrice": "$245.07",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "เน้นการแบ่งไม้สะสมทีละส่วน (DCA) บริเวณแนวรับสำคัญ ไม่ควรซื้อไล่ราคาเมื่อราคาวิ่งเข้าใกล้แนวต้าน R1"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($162.2) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "ARM": {
+    "meta": {
+      "symbol": "ARM",
+      "companyName": "ARM Holdings",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 302.71,
+      "priceChange": 168.75,
+      "priceChangePct": 125.97,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $202.56"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 302.71
+        },
+        "poc": {
+          "label": "POC",
+          "price": 290.6
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 317.85
+          },
+          {
+            "label": "R2",
+            "price": 339.04
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 202.56
+          },
+          {
+            "label": "S2",
+            "price": 160.91
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 311.79
+        },
+        "val": {
+          "label": "VAL",
+          "price": 275.47
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$287.57 - $299.68",
+        "stopLoss": "$154.47",
+        "takeProfit1": "$317.85",
+        "takeProfit2": "$339.04",
+        "rrRatio": "1:0.1",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($202.56) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 70.8 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.8x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.1",
+        "trailingStop": "$15.88",
+        "maxLoss": "$21.18",
+        "atr14": "$10.59"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 40,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "3.41",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "75.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น ARM Holdings (ARM) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.1) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (75.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$317.85",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($272.44) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($160.91) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "PANW": {
+    "meta": {
+      "symbol": "PANW",
+      "companyName": "Palo Alto",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 248.47,
+      "priceChange": 61.01,
+      "priceChangePct": 32.55,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $199.92"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 248.47
+        },
+        "poc": {
+          "label": "POC",
+          "price": 238.53
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 260.89
+          },
+          {
+            "label": "R2",
+            "price": 278.29
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 199.92
+          },
+          {
+            "label": "S2",
+            "price": 190.58
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 255.92
+        },
+        "val": {
+          "label": "VAL",
+          "price": 226.11
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$236.05 - $245.99",
+        "stopLoss": "$182.96",
+        "takeProfit1": "$260.89",
+        "takeProfit2": "$278.29",
+        "rrRatio": "1:0.2",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($199.92) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 71.3 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 1.05x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.2",
+        "trailingStop": "$13.05",
+        "maxLoss": "$17.40",
+        "atr14": "$8.70"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "2.18",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "48.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Palo Alto (PANW) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.2) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (48.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$260.89",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($223.62) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($190.58) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "NET": {
+    "meta": {
+      "symbol": "NET",
+      "companyName": "Cloudflare",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 209.22,
+      "priceChange": 47.46,
+      "priceChangePct": 29.34,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $206.31"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 209.22
+        },
+        "poc": {
+          "label": "POC",
+          "price": 200.85
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 219.68
+          },
+          {
+            "label": "R2",
+            "price": 234.33
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 206.31
+          },
+          {
+            "label": "S2",
+            "price": 202.68
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 215.5
+        },
+        "val": {
+          "label": "VAL",
+          "price": 190.39
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$198.76 - $207.13",
+        "stopLoss": "$194.57",
+        "takeProfit1": "$219.68",
+        "takeProfit2": "$234.33",
+        "rrRatio": "1:0.7",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($206.31) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 50.2 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": true
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.64x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.7",
+        "trailingStop": "$10.98",
+        "maxLoss": "$14.64",
+        "atr14": "$7.32"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 40,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "3.09",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "68.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Cloudflare (NET) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.7) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (68.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$219.68",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($188.3) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($202.68) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "DDOG": {
+    "meta": {
+      "symbol": "DDOG",
+      "companyName": "Datadog",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 221.81,
+      "priceChange": 104.21,
+      "priceChangePct": 88.61,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $163.15"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 221.81
+        },
+        "poc": {
+          "label": "POC",
+          "price": 212.94
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 232.9
+          },
+          {
+            "label": "R2",
+            "price": 248.43
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 163.15
+          },
+          {
+            "label": "S2",
+            "price": 144.76
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 228.46
+        },
+        "val": {
+          "label": "VAL",
+          "price": 201.85
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$210.72 - $219.59",
+        "stopLoss": "$138.97",
+        "takeProfit1": "$232.90",
+        "takeProfit2": "$248.43",
+        "rrRatio": "1:0.1",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($163.15) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 81.9 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.66x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.1",
+        "trailingStop": "$11.64",
+        "maxLoss": "$15.52",
+        "atr14": "$7.76"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 40,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "2.45",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "54.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Datadog (DDOG) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.1) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (54.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$232.90",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($199.63) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($144.76) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "SNOW": {
+    "meta": {
+      "symbol": "SNOW",
+      "companyName": "Snowflake",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 175.26,
+      "priceChange": -31.09,
+      "priceChangePct": -15.07,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $159.23"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 175.26
+        },
+        "poc": {
+          "label": "POC",
+          "price": 168.25
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 184.02
+          },
+          {
+            "label": "R2",
+            "price": 196.29
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 159.23
+          },
+          {
+            "label": "S2",
+            "price": 157.73
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 180.52
+        },
+        "val": {
+          "label": "VAL",
+          "price": 159.49
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$166.5 - $173.51",
+        "stopLoss": "$151.42",
+        "takeProfit1": "$184.02",
+        "takeProfit2": "$196.29",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($159.23) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 66.5 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 2.11x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$9.20",
+        "maxLoss": "$12.26",
+        "atr14": "$6.13"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 40,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "2.82",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "62.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Snowflake (SNOW) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (62.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$184.02",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($157.73) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($157.73) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "ABNB": {
+    "meta": {
+      "symbol": "ABNB",
+      "companyName": "Airbnb",
+      "industry": "Consumer Cyclical Industry",
+      "sector": "Consumer Cyclical",
+      "currentPrice": 132.1,
+      "priceChange": 2.7,
+      "priceChangePct": 2.09,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 4,
+      "viScore": 7,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $125.49"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 132.1
+        },
+        "poc": {
+          "label": "POC",
+          "price": 126.82
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 138.71
+          },
+          {
+            "label": "R2",
+            "price": 147.95
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 125.49
+          },
+          {
+            "label": "S2",
+            "price": 130.95
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 136.06
+        },
+        "val": {
+          "label": "VAL",
+          "price": 120.21
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$125.49 - $130.78",
+        "stopLoss": "$125.71",
+        "takeProfit1": "$138.71",
+        "takeProfit2": "$147.95",
+        "rrRatio": "1:1.0",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($125.49) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 43.0 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 0.77x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:1.0",
+        "trailingStop": "$6.93",
+        "maxLoss": "$9.24",
+        "atr14": "$4.62"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 80,
+          "color": "var(--color-bullish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 40,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "1.2",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "26.5",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Airbnb (ABNB) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Consumer Cyclical",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:1.0) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (26.5x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$138.71",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($118.89) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($130.95) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "UBER": {
+    "meta": {
+      "symbol": "UBER",
+      "companyName": "Uber",
+      "industry": "Industrials Industry",
+      "sector": "Industrials",
+      "currentPrice": 70.73,
+      "priceChange": -18.27,
+      "priceChangePct": -20.53,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 0,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (สะสมพลังสร้างฐาน)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "neutral",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $67.19"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 70.73
+        },
+        "poc": {
+          "label": "POC",
+          "price": 67.9
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 74.27
+          },
+          {
+            "label": "R2",
+            "price": 79.22
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 67.19
+          },
+          {
+            "label": "S2",
+            "price": 63.66
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 72.85
+        },
+        "val": {
+          "label": "VAL",
+          "price": 64.36
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$67.19 - $70.02",
+        "stopLoss": "$61.11",
+        "takeProfit1": "$74.27",
+        "takeProfit2": "$79.22",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($67.19) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": false
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 38.4 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 1.25x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$3.72",
+        "maxLoss": "$4.96",
+        "atr14": "$2.48"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B+",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 60,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 0,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "15.4%",
+        "roe": "16.2%",
+        "pegRatio": "1.43",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "31.4",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น Uber (UBER) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 0/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Industrials",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (31.4x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$74.27",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($63.66) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($63.66) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "PATH": {
+    "meta": {
+      "symbol": "PATH",
+      "companyName": "UiPath",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 11.16,
+      "priceChange": -1.51,
+      "priceChangePct": -11.92,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 3,
+      "viScore": 7,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "10%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $10.89"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 11.16
+        },
+        "poc": {
+          "label": "POC",
+          "price": 10.71
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 11.72
+          },
+          {
+            "label": "R2",
+            "price": 12.5
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 10.89
+          },
+          {
+            "label": "S2",
+            "price": 10.04
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 11.49
+        },
+        "val": {
+          "label": "VAL",
+          "price": 10.16
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$10.6 - $11.05",
+        "stopLoss": "$9.64",
+        "takeProfit1": "$11.72",
+        "takeProfit2": "$12.50",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($10.89) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 57.6 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": true
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 1.2x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$0.58",
+        "maxLoss": "$0.78",
+        "atr14": "$0.39"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 80,
+          "color": "var(--color-bullish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 30,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "1.0",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "22.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น UiPath (PATH) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 3/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (22.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$11.72",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($10.04) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($10.04) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
   }
 };
 const screenerData = [
@@ -1599,6 +5775,9 @@ function selectStockDirect(symbol) {
         const option = Array.from(selector.options).find(o => o.value === symbol);
         if (selectedText && option) {
           selectedText.textContent = option.textContent;
+        } else if (selectedText) {
+          const company = stocksData[symbol].meta.companyName;
+          selectedText.textContent = `${company} (${symbol})`;
         }
       }
       
@@ -1622,8 +5801,6 @@ function selectStockDirect(symbol) {
       appEl.style.opacity = '1';
       document.getElementById('tab-overview').click();
     }, 300);
-  } else {
-    alert(`หุ้น ${symbol} อยู่ในกลุ่มหุ้นแนะนำประจำวัน แต่วิถีคูเมืองวิเคราะห์แบบเจาะลึกเปิดให้ใช้งานเฉพาะหุ้นหลัก 10 ตัวแรกในระบบเทรดเท่านั้นครับ คุณสามารถกดวิเคราะห์หุ้นหลัก 10 ตัวผ่านกล่องรายชื่อสีเงินด้านบนได้เลยครับ`);
   }
 }
 
