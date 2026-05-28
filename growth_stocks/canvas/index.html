@@ -62,6 +62,9 @@
               <option value="ANET">ANET (Arista)</option>
             </select>
           </div>
+          <div class="search-wrapper">
+            <input type="text" id="stock-search-input" class="stock-search" placeholder="🔍 ค้นหาและวิเคราะห์หุ้นอื่น..." />
+          </div>
         </div>
       </div>
       <div class="nav-center">
@@ -174,6 +177,58 @@
               <span class="stat-label">Margin of Safety</span>
               <span class="stat-value" id="safety-val">—</span>
             </div>
+          </div>
+        </div>
+
+                <!-- Daily Stock Screener -->
+        <div class="screener-card glass">
+          <div class="screener-header">
+            <div class="screener-title-block">
+              <h2><span class="card-icon">🔥</span> ข้อมูลสแกนหุ้นเติบโตประจำวัน (Daily Stock Screener & Breakouts)</h2>
+              <p class="screener-subtitle">สแกนหุ้นเทรนด์แข็งแกร่งและโมเมนตัม Breakout บนตลาดสหรัฐฯ อัปเดตสดใหม่ทุกวัน</p>
+            </div>
+            <div class="screener-filters">
+              <select id="screener-filter-sector" class="screener-select">
+                <option value="ALL">ทุกอุตสาหกรรม (All Sectors)</option>
+                <option value="Technology">กลุ่มเทคโนโลยี (Technology)</option>
+                <option value="Consumer Cyclical">กลุ่มค้าปลีก/ยานยนต์ (Consumer)</option>
+                <option value="Financials">กลุ่มการเงิน (Financials)</option>
+                <option value="Industrials">กลุ่มอุตสาหกรรม (Industrials)</option>
+              </select>
+              <select id="screener-filter-metric" class="screener-select">
+                <option value="ALL">ทุกสัญญาณ (All Signals)</option>
+                <option value="HIGH_SCORE">คะแนนสแกนสูง (> 6 คะแนน)</option>
+                <option value="EMA200">เหนือเส้น EMA 200 (Long-term Bull)</option>
+                <option value="VOL_SPIKE">เม็ดเงินสถาบันเข้า (Volume Spike > 1.3x)</option>
+                <option value="OVERSOLD">ราคาถูกเกินไป (RSI < 40)</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="screener-table-wrapper">
+            <table class="screener-table" id="screener-table">
+              <thead>
+                <tr>
+                   <th>Ticker</th>
+                   <th>Company</th>
+                   <th>Sector</th>
+                   <th class="tooltip-header" data-tooltip="PE">P/E Ratio <span class="info-icon">ℹ️</span></th>
+                   <th class="tooltip-header" data-tooltip="RSI">RSI (14) <span class="info-icon">ℹ️</span></th>
+                   <th class="tooltip-header" data-tooltip="VOL">Volume Spike <span class="info-icon">ℹ️</span></th>
+                   <th>EMA 200</th>
+                   <th class="tooltip-header" data-tooltip="SCORE">Screener Score <span class="info-icon">ℹ️</span></th>
+                </tr>
+              </thead>
+              <tbody id="screener-table-body">
+                <!-- Screened items injected here -->
+              </tbody>
+            </table>
+          </div>
+          
+          <!-- Glassmorphic Tooltip container -->
+          <div id="screener-tooltip" class="screener-tooltip hidden">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-content" id="screener-tooltip-content"></div>
           </div>
         </div>
 
@@ -389,5 +444,16 @@
   </div>
 
   <script src="app.js"></script>
+  <!-- Dynamic Search Loading Overlay -->
+  <div id="search-loading" class="search-loading hidden">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <div class="loader-ring ring-2"></div>
+      <div class="loader-ring ring-3"></div>
+      <span class="logo-text">SHU AI</span>
+      <p id="search-loading-text" class="loading-text">SHU AI Engine: กำลังคำนวณและวิเคราะห์ข้อมูลทางเทคนิคและปัจจัยพื้นฐาน...</p>
+    </div>
+  </div>
+
 </body>
 </html>
