@@ -2137,7 +2137,7 @@ portfolio_content = generate_js_content(
     portfolio_data,
     portfolio_selector
 )
-with open('c:/Users/mmuni/Documents/Antigravity/agents/shu/my_portfolio/canvas/app.js', 'w', encoding='utf-8') as f:
+with open('my_portfolio/canvas/app.js', 'w', encoding='utf-8') as f:
     f.write(portfolio_content)
 
 # 2. Update Growth Stocks App
@@ -2150,7 +2150,7 @@ growth_content = generate_js_content(
     growth_data,
     growth_selector
 )
-with open('c:/Users/mmuni/Documents/Antigravity/agents/shu/growth_stocks/canvas/app.js', 'w', encoding='utf-8') as f:
+with open('growth_stocks/canvas/app.js', 'w', encoding='utf-8') as f:
     f.write(growth_content)
 
 # 3. Update Unified Canvas App (All 14 Stocks)
@@ -2164,7 +2164,7 @@ unified_content = generate_js_content(
     unified_data,
     unified_selector
 )
-with open('c:/Users/mmuni/Documents/Antigravity/agents/shu/canvas/app.js', 'w', encoding='utf-8') as f:
+with open('canvas/app.js', 'w', encoding='utf-8') as f:
     f.write(unified_content)
 
 print("Updated all three canvas js files successfully (Portfolio, Growth, and Unified)")
