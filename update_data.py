@@ -1920,6 +1920,7 @@ watchlist_metadata = {
     "MU": {"name": "Micron", "sector": "Technology", "pe": 22.8},
     "TSM": {"name": "TSMC", "sector": "Technology", "pe": 25.4},
     "ASML": {"name": "ASML", "sector": "Technology", "pe": 42.5},
+    "ORCL": {"name": "Oracle", "sector": "Technology", "pe": 26.5},
     "PLTR": {"name": "Palantir", "sector": "Technology", "pe": 82.0},
     "ANET": {"name": "Arista Networks", "sector": "Technology", "pe": 38.5},
     "AMD": {"name": "AMD", "sector": "Technology", "pe": 48.0},
