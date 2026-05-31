@@ -463,8 +463,118 @@ portfolio_data = {
       ],
       "sources": ["Q1 Fiscal 2027 Financial Results", "Securities Analyst Briefings"]
     }
+  },
+  "BTC-USD": {
+    "meta": {
+        "symbol": "BTC-USD",
+        "companyName": "Bitcoin",
+        "industry": "Cryptocurrency",
+        "sector": "Digital Asset",
+        "currentPrice": 68000.00,
+        "priceChange": 0.0,
+        "priceChangePct": 0.0,
+        "analysisDate": "2026-05-28"
+      },
+      "overview": {
+        "verdict": "BUY",
+        "verdictConfidence": "High Confidence",
+        "taScore": 8,
+        "viScore": 9,
+        "moat": "Network Effect",
+        "marginOfSafety": "N/A"
+      },
+      "technical": {
+        "condition": "Strong Bullish Structure (โครงสร้างขาขึ้นแข็งแกร่ง)",
+        "trend": {
+          "direction": "Uptrend",
+          "strength": "Strong",
+          "timeframes": [
+            { "tf": "Daily", "bias": "bullish", "note": "แกว่งตัวในกรอบสะสมพลังขาขึ้น พยายามยืนเหนือ EMA 50" },
+            { "tf": "Weekly", "bias": "bullish", "note": "ทำจุดสูงสุดใหม่ต่อเนื่องหลังการ Halving รอบที่ 4" }
+          ]
+        },
+        "levels": {
+          "current": { "label": "Current", "price": 68000.00 },
+          "poc": { "label": "POC", "price": 64000.00 },
+          "resistances": [{ "label": "R1", "price": 72000.00 }, { "label": "R2", "price": 80000.00 }],
+          "supports": [{ "label": "S1", "price": 64000.00 }, { "label": "S2", "price": 60000.00 }],
+          "vah": { "label": "VAH", "price": 70000.00 },
+          "val": { "label": "VAL", "price": 58000.00 }
+        },
+        "entry": {
+          "signal": "BUY",
+          "entryZone": "$62,000 – $65,000",
+          "stopLoss": "$58,000.00",
+          "takeProfit1": "$78,000.00",
+          "takeProfit2": "$90,000.00",
+          "rrRatio": "1:2.8",
+          "confidence": "High"
+        },
+        "confluences": [
+          { "name": "การยืนยันแนวรับจิตวิทยาที่ระดับ $60,000", "confirmed": True },
+          { "name": "แรงซื้อสะสมจากกองทุน Spot Bitcoin ETF อย่างต่อเนื่อง", "confirmed": True },
+          { "name": "โมเมนตัม RSI ยืนเหนือระดับ 50 บ่งชี้ขาขึ้นยังคงได้เปรียบ", "confirmed": True }
+        ],
+        "risk": {
+          "positionSize": "2%",
+          "riskPct": "8.0%",
+          "riskReward": "1:2.8",
+          "trailingStop": "ATRx2.5",
+          "maxLoss": "$500",
+          "atr14": "$2,500.00"
+        },
+        "rationale": "<p><strong>วิเคราะห์ทางเทคนิค:</strong> BTC ยังคงรักษารูปแบบโครงสร้างแนวโน้มขาขึ้นในภาพใหญ่ได้อย่างแข็งแกร่ง แม้จะมีแรงเทขายทำกำไรระยะสั้นสลับออกมาบ้าง การสะสมพลังในกรอบ $60,000 - $68,000 เป็นจังหวะที่ดีในการทยอยตั้งรับรอบใหม่ โดยมีแนวรับสำคัญที่แข็งแกร่งบริเวณ POC ที่ $64,000 และจุด Stop Loss ที่ $58,000</p>",
+        "risks": "<p><strong>ความเสี่ยงเทคนิค:</strong> หากราคาทะลุแนวรับสำคัญที่ $58,000 อาจนำไปสู่การปรับฐานใหญ่ลงไปทดสอบบริเวณ $52,000 - $54,000 ซึ่งจะทำให้ภาพรวมขาขึ้นระยะสั้นเสียทรง</p>"
+      },
+      "fundamental": {
+        "incomeStatement": [
+          { "metric": "Hash Rate (Security)", "value": "~650 EH/s", "grade": "A" },
+          { "metric": "Daily Active Addresses", "value": "~900,000", "grade": "B" },
+          { "metric": "Daily Transactions", "value": "~450,000", "grade": "A" }
+        ],
+        "balanceSheet": [
+          { "metric": "Max Supply Limit", "value": "21,000,000", "grade": "A" },
+          { "metric": "Circulating Supply", "value": "~19,700,000", "grade": "A" },
+          { "metric": "Illiquid Supply (HODLed)", "value": "74%", "grade": "A" }
+        ],
+        "cashflow": [
+          { "metric": "Daily Tx Fees (Security Budget)", "value": "$3.2M", "grade": "B" },
+          { "metric": "Lightning Network Capacity", "value": "5,600 BTC", "grade": "B" },
+          { "metric": "Network Settlement Volume", "value": "$12.4B/day", "grade": "A" }
+        ],
+        "valuation": [
+          { "metric": "MVRV Z-Score", "value": "1.85 (Fair Value)", "grade": "B" },
+          { "metric": "Stock-to-Flow Model", "value": "Highly Scarce", "grade": "A" },
+          { "metric": "Market Cap", "value": "$1.32 Trillion", "grade": "A" }
+        ],
+        "overallGrade": "A",
+        "gradeBreakdown": [
+          { "label": "Security & Network", "score": 95, "color": "var(--grade-a)" },
+          { "label": "Adoption & Growth", "score": 85, "color": "var(--grade-a)" },
+          { "label": "Scarcity & Tokenomics", "score": 98, "color": "var(--grade-a)" }
+        ],
+        "moat": {
+          "overall": "Wide Network Effect",
+          "items": [
+            { "icon": "⚡", "name": "First-Mover & Network Effect Monopoly", "strength": 99, "description": "การเป็นราชาแห่งคริปโทเคอร์เรนซีที่มีประวัติศาสตร์ยาวนานที่สุด มีความปลอดภัยของเครือข่ายสูงสุด และเป็นที่ยอมรับระดับสถาบันการเงินและกฎหมาย" }
+          ]
+        }
+      },
+      "thesis": {
+        "statement": "Bitcoin เป็นสินทรัพย์ดิจิทัลที่มีความขาดแคลนสัมบูรณ์ (Absolute Scarcity) ปลอดภัยสูงสุด และกำลังถูกเปลี่ยนผ่านจากสินทรัพย์เก็งกำไรสู่ ทองคำดิจิทัล (Digital Gold) ที่ได้รับการยอมรับอย่างเป็นทางการจากสถาบันการเงินทั่วโลก",
+        "bullCase": [
+          "ความต้องการเพิ่มขึ้นอย่างต่อเนื่องจากสถาบันการเงินผ่าน Spot Bitcoin ETF และการเพิ่มสัดส่วนในพอร์ตการลงทุน",
+          "การ Halving ทุกๆ 4 ปี ทำให้อัตราเงินเฟ้อของระบบลดลงครึ่งหนึ่ง ส่งผลให้เกิด Supply Shock เสมอ",
+          "การพัฒนา Layer 2 เช่น Lightning Network หรือ Taproot ช่วยขยายการใช้งานและความเป็นส่วนตัว"
+        ],
+        "bearCase": [
+          "ความเสี่ยงด้านกฎระเบียบและการแบนจากประเทศมหาอำนาจ",
+          "ความผันผวนของราคาที่รุนแรงในระยะสั้นอาจไม่เหมาะกับผู้ลงทุนที่รับความเสี่ยงได้ต่ำ",
+          "ความกังวลด้านการใช้พลังงานไฟฟ้าในการขุด (แม้ปัจจุบันจะเปลี่ยนมาใช้พลังงานสะอาดมากกว่า 55%)"
+        ]
+      }
+    }
   }
-}
 
 # Data for Growth Stocks: META, LLY, VRT, NU
 growth_data = {
@@ -1538,6 +1648,27 @@ function renderTechnical(ta) {{
 }}
 
 function renderFundamental(fund) {{
+  // Dynamically change financial card titles for Bitcoin / Crypto
+  if (activeStock === 'BTC-USD') {{
+    const incCard = document.querySelector('#income-card .fin-card-title');
+    const balCard = document.querySelector('#balance-card .fin-card-title');
+    const cfCard = document.querySelector('#cashflow-card .fin-card-title');
+    const valCard = document.querySelector('#valuation-card .fin-card-title');
+    if (incCard) incCard.innerHTML = '📊 Network Security & Adoption';
+    if (balCard) balCard.innerHTML = '📋 Token Supply & Scarcity';
+    if (cfCard) cfCard.innerHTML = '💰 Transaction & Settlement';
+    if (valCard) valCard.innerHTML = '🎯 On-Chain Valuation';
+  }} else {{
+    const incCard = document.querySelector('#income-card .fin-card-title');
+    const balCard = document.querySelector('#balance-card .fin-card-title');
+    const cfCard = document.querySelector('#cashflow-card .fin-card-title');
+    const valCard = document.querySelector('#valuation-card .fin-card-title');
+    if (incCard) incCard.innerHTML = '📊 Income Statement';
+    if (balCard) balCard.innerHTML = '📋 Balance Sheet';
+    if (cfCard) cfCard.innerHTML = '💰 Cash Flow';
+    if (valCard) valCard.innerHTML = '🎯 Valuation';
+  }}
+
   let incomeRows = fund.incomeStatement;
   let balanceRows = fund.balanceSheet;
   let cashflowRows = fund.cashflow;
@@ -1911,6 +2042,7 @@ def generate_dynamic_stock_analysis(sym, current_price, change, pct, closes, vol
 # Watchlist for daily breakouts (35 stocks)
 watchlist_metadata = {
     "MSFT": {"name": "Microsoft", "sector": "Technology", "pe": 32.4},
+    "BTC-USD": {"name": "Bitcoin", "sector": "Digital Asset", "pe": 999.0},
     "AAPL": {"name": "Apple", "sector": "Technology", "pe": 27.5},
     "NVDA": {"name": "NVIDIA", "sector": "Technology", "pe": 58.2},
     "AMZN": {"name": "Amazon", "sector": "Consumer Cyclical", "pe": 38.2},
@@ -2024,8 +2156,27 @@ for sym, meta_static in watchlist_metadata.items():
                 "score": score
             })
             
+            # Dynamically update price, change & analysis date of core stocks in-memory
+            import datetime
+            today_str = datetime.date.today().strftime("%Y-%m-%d")
+            
+            if sym in portfolio_data:
+                portfolio_data[sym]["meta"]["currentPrice"] = current_price
+                portfolio_data[sym]["meta"]["priceChange"] = change
+                portfolio_data[sym]["meta"]["priceChangePct"] = pct
+                portfolio_data[sym]["meta"]["analysisDate"] = today_str
+                if "technical" in portfolio_data[sym] and "levels" in portfolio_data[sym]["technical"]:
+                    portfolio_data[sym]["technical"]["levels"]["current"]["price"] = current_price
+            elif sym in growth_data:
+                growth_data[sym]["meta"]["currentPrice"] = current_price
+                growth_data[sym]["meta"]["priceChange"] = change
+                growth_data[sym]["meta"]["priceChangePct"] = pct
+                growth_data[sym]["meta"]["analysisDate"] = today_str
+                if "technical" in growth_data[sym] and "levels" in growth_data[sym]["technical"]:
+                    growth_data[sym]["technical"]["levels"]["current"]["price"] = current_price
+
             # Dynamically generate qualitative and quantitative analysis for other watchlist stocks
-            core_stocks = {"GOOGL", "MU", "TSM", "NVDA", "META", "ASML", "MSFT", "AAPL", "AMZN", "TSLA"}
+            core_stocks = {"GOOGL", "MU", "TSM", "NVDA", "META", "ASML", "MSFT", "AAPL", "AMZN", "TSLA", "BTC-USD"}
             if sym not in core_stocks:
                 dynamic_watchlist_data[sym] = generate_dynamic_stock_analysis(
                     sym, current_price, change, pct, closes, volumes, meta_static, rsi, ema20, ema50, ema200, score, vol_spike
@@ -2045,7 +2196,7 @@ def make_selector(stocks_list, data_dict):
     return "".join(options) + "\\n    "
 
 # 1. Update Portfolio App
-portfolio_list = ["MU", "TSM", "NVDA", "GOOGL"]
+portfolio_list = ["MU", "TSM", "NVDA", "GOOGL", "BTC-USD"]
 portfolio_selector = make_selector(portfolio_list, portfolio_data)
 merged_portfolio_data = {**portfolio_data, **dynamic_watchlist_data}
 portfolio_content = generate_js_content(
@@ -2077,9 +2228,9 @@ growth_content = growth_content.replace('\\`', '`')
 with open('growth_stocks/canvas/app.js', 'w', encoding='utf-8') as f:
     f.write(growth_content)
 
-# 3. Update Unified Canvas App (All 10 Stocks)
+# 3. Update Unified Canvas App (All 11 Stocks)
 unified_data = {**portfolio_data, **growth_data}
-unified_list = ["GOOGL", "MU", "TSM", "NVDA", "META", "ASML", "MSFT", "AAPL", "AMZN", "TSLA"]
+unified_list = ["GOOGL", "MU", "TSM", "NVDA", "META", "ASML", "MSFT", "AAPL", "AMZN", "TSLA", "BTC-USD"]
 unified_selector = make_selector(unified_list, unified_data)
 merged_unified_data = {**unified_data, **dynamic_watchlist_data}
 unified_content = generate_js_content(
