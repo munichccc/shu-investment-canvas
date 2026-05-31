@@ -1,6 +1,6 @@
 /* =========================================
    SHU CANVAS — Shu Canvas
-   Stocks: GOOGL, MU, TSM, NVDA, META, ASML, MSFT, AAPL, AMZN, TSLA
+   Stocks: GOOGL, MU, TSM, NVDA, META, ASML, MSFT, AAPL, AMZN, TSLA, BTC-USD
    ========================================= */
 
 const stocksData = {
@@ -10,10 +10,10 @@ const stocksData = {
       "companyName": "Alphabet Inc.",
       "industry": "Interactive Media",
       "sector": "Technology",
-      "currentPrice": 390.41,
-      "priceChange": 1.67,
-      "priceChangePct": 0.43,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 380.34,
+      "priceChange": 208.48,
+      "priceChangePct": 121.31,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY",
@@ -44,7 +44,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 387.66
+          "price": 380.34
         },
         "poc": {
           "label": "POC",
@@ -220,10 +220,10 @@ const stocksData = {
       "companyName": "Micron Technology",
       "industry": "Semiconductors",
       "sector": "Technology",
-      "currentPrice": 928.5,
-      "priceChange": 32.52,
-      "priceChangePct": 3.63,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 971.0,
+      "priceChange": 874.2,
+      "priceChangePct": 903.1,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY / ACCUMULATE",
@@ -254,7 +254,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 762.1
+          "price": 971.0
         },
         "poc": {
           "label": "POC",
@@ -430,10 +430,10 @@ const stocksData = {
       "companyName": "Taiwan Semiconductor Mfg.",
       "industry": "Semiconductors",
       "sector": "Technology",
-      "currentPrice": 422.73,
-      "priceChange": 9.91,
-      "priceChangePct": 2.4,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 418.45,
+      "priceChange": 221.3,
+      "priceChangePct": 112.25,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY",
@@ -464,7 +464,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 407.15
+          "price": 418.45
         },
         "poc": {
           "label": "POC",
@@ -640,10 +640,10 @@ const stocksData = {
       "companyName": "NVIDIA Corp.",
       "industry": "Semiconductors",
       "sector": "Technology",
-      "currentPrice": 212.6,
-      "priceChange": -2.26,
-      "priceChangePct": -1.05,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 211.14,
+      "priceChange": 71.95,
+      "priceChangePct": 51.69,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "HOLD / ACCUMULATE",
@@ -674,7 +674,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 219.51
+          "price": 211.14
         },
         "poc": {
           "label": "POC",
@@ -844,16 +844,238 @@ const stocksData = {
       ]
     }
   },
+  "BTC-USD": {
+    "meta": {
+      "symbol": "BTC-USD",
+      "companyName": "Bitcoin",
+      "industry": "Cryptocurrency",
+      "sector": "Digital Asset",
+      "currentPrice": 73772.73,
+      "priceChange": -30865.36,
+      "priceChangePct": -29.5,
+      "analysisDate": "2026-05-31"
+    },
+    "overview": {
+      "verdict": "BUY",
+      "verdictConfidence": "High Confidence",
+      "taScore": 8,
+      "viScore": 9,
+      "moat": "Network Effect",
+      "marginOfSafety": "N/A"
+    },
+    "technical": {
+      "condition": "Strong Bullish Structure (โครงสร้างขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Uptrend",
+        "strength": "Strong",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "แกว่งตัวในกรอบสะสมพลังขาขึ้น พยายามยืนเหนือ EMA 50"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "bullish",
+            "note": "ทำจุดสูงสุดใหม่ต่อเนื่องหลังการ Halving รอบที่ 4"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 73772.73
+        },
+        "poc": {
+          "label": "POC",
+          "price": 64000.0
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 72000.0
+          },
+          {
+            "label": "R2",
+            "price": 80000.0
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 64000.0
+          },
+          {
+            "label": "S2",
+            "price": 60000.0
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 70000.0
+        },
+        "val": {
+          "label": "VAL",
+          "price": 58000.0
+        }
+      },
+      "entry": {
+        "signal": "BUY",
+        "entryZone": "$62,000 – $65,000",
+        "stopLoss": "$58,000.00",
+        "takeProfit1": "$78,000.00",
+        "takeProfit2": "$90,000.00",
+        "rrRatio": "1:2.8",
+        "confidence": "High"
+      },
+      "confluences": [
+        {
+          "name": "การยืนยันแนวรับจิตวิทยาที่ระดับ $60,000",
+          "confirmed": true
+        },
+        {
+          "name": "แรงซื้อสะสมจากกองทุน Spot Bitcoin ETF อย่างต่อเนื่อง",
+          "confirmed": true
+        },
+        {
+          "name": "โมเมนตัม RSI ยืนเหนือระดับ 50 บ่งชี้ขาขึ้นยังคงได้เปรียบ",
+          "confirmed": true
+        }
+      ],
+      "risk": {
+        "positionSize": "2%",
+        "riskPct": "8.0%",
+        "riskReward": "1:2.8",
+        "trailingStop": "ATRx2.5",
+        "maxLoss": "$500",
+        "atr14": "$2,500.00"
+      },
+      "rationale": "<p><strong>วิเคราะห์ทางเทคนิค:</strong> BTC ยังคงรักษารูปแบบโครงสร้างแนวโน้มขาขึ้นในภาพใหญ่ได้อย่างแข็งแกร่ง แม้จะมีแรงเทขายทำกำไรระยะสั้นสลับออกมาบ้าง การสะสมพลังในกรอบ $60,000 - $68,000 เป็นจังหวะที่ดีในการทยอยตั้งรับรอบใหม่ โดยมีแนวรับสำคัญที่แข็งแกร่งบริเวณ POC ที่ $64,000 และจุด Stop Loss ที่ $58,000</p>",
+      "risks": "<p><strong>ความเสี่ยงเทคนิค:</strong> หากราคาทะลุแนวรับสำคัญที่ $58,000 อาจนำไปสู่การปรับฐานใหญ่ลงไปทดสอบบริเวณ $52,000 - $54,000 ซึ่งจะทำให้ภาพรวมขาขึ้นระยะสั้นเสียทรง</p>"
+    },
+    "fundamental": {
+      "incomeStatement": [
+        {
+          "metric": "Hash Rate (Security)",
+          "value": "~650 EH/s",
+          "grade": "A"
+        },
+        {
+          "metric": "Daily Active Addresses",
+          "value": "~900,000",
+          "grade": "B"
+        },
+        {
+          "metric": "Daily Transactions",
+          "value": "~450,000",
+          "grade": "A"
+        }
+      ],
+      "balanceSheet": [
+        {
+          "metric": "Max Supply Limit",
+          "value": "21,000,000",
+          "grade": "A"
+        },
+        {
+          "metric": "Circulating Supply",
+          "value": "~19,700,000",
+          "grade": "A"
+        },
+        {
+          "metric": "Illiquid Supply (HODLed)",
+          "value": "74%",
+          "grade": "A"
+        }
+      ],
+      "cashflow": [
+        {
+          "metric": "Daily Tx Fees (Security Budget)",
+          "value": "$3.2M",
+          "grade": "B"
+        },
+        {
+          "metric": "Lightning Network Capacity",
+          "value": "5,600 BTC",
+          "grade": "B"
+        },
+        {
+          "metric": "Network Settlement Volume",
+          "value": "$12.4B/day",
+          "grade": "A"
+        }
+      ],
+      "valuation": [
+        {
+          "metric": "MVRV Z-Score",
+          "value": "1.85 (Fair Value)",
+          "grade": "B"
+        },
+        {
+          "metric": "Stock-to-Flow Model",
+          "value": "Highly Scarce",
+          "grade": "A"
+        },
+        {
+          "metric": "Market Cap",
+          "value": "$1.32 Trillion",
+          "grade": "A"
+        }
+      ],
+      "overallGrade": "A",
+      "gradeBreakdown": [
+        {
+          "label": "Security & Network",
+          "score": 95,
+          "color": "var(--grade-a)"
+        },
+        {
+          "label": "Adoption & Growth",
+          "score": 85,
+          "color": "var(--grade-a)"
+        },
+        {
+          "label": "Scarcity & Tokenomics",
+          "score": 98,
+          "color": "var(--grade-a)"
+        }
+      ],
+      "moat": {
+        "overall": "Wide Network Effect",
+        "items": [
+          {
+            "icon": "⚡",
+            "name": "First-Mover & Network Effect Monopoly",
+            "strength": 99,
+            "description": "การเป็นราชาแห่งคริปโทเคอร์เรนซีที่มีประวัติศาสตร์ยาวนานที่สุด มีความปลอดภัยของเครือข่ายสูงสุด และเป็นที่ยอมรับระดับสถาบันการเงินและกฎหมาย"
+          }
+        ]
+      }
+    },
+    "thesis": {
+      "statement": "Bitcoin เป็นสินทรัพย์ดิจิทัลที่มีความขาดแคลนสัมบูรณ์ (Absolute Scarcity) ปลอดภัยสูงสุด และกำลังถูกเปลี่ยนผ่านจากสินทรัพย์เก็งกำไรสู่ ทองคำดิจิทัล (Digital Gold) ที่ได้รับการยอมรับอย่างเป็นทางการจากสถาบันการเงินทั่วโลก",
+      "bullCase": [
+        "ความต้องการเพิ่มขึ้นอย่างต่อเนื่องจากสถาบันการเงินผ่าน Spot Bitcoin ETF และการเพิ่มสัดส่วนในพอร์ตการลงทุน",
+        "การ Halving ทุกๆ 4 ปี ทำให้อัตราเงินเฟ้อของระบบลดลงครึ่งหนึ่ง ส่งผลให้เกิด Supply Shock เสมอ",
+        "การพัฒนา Layer 2 เช่น Lightning Network หรือ Taproot ช่วยขยายการใช้งานและความเป็นส่วนตัว"
+      ],
+      "bearCase": [
+        "ความเสี่ยงด้านกฎระเบียบและการแบนจากประเทศมหาอำนาจ",
+        "ความผันผวนของราคาที่รุนแรงในระยะสั้นอาจไม่เหมาะกับผู้ลงทุนที่รับความเสี่ยงได้ต่ำ",
+        "ความกังวลด้านการใช้พลังงานไฟฟ้าในการขุด (แม้ปัจจุบันจะเปลี่ยนมาใช้พลังงานสะอาดมากกว่า 55%)"
+      ]
+    }
+  },
   "MSFT": {
     "meta": {
       "symbol": "MSFT",
       "companyName": "Microsoft Corporation",
       "industry": "Software - Infrastructure",
       "sector": "Technology",
-      "currentPrice": 420.55,
-      "priceChange": 3.42,
-      "priceChangePct": 0.82,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 450.24,
+      "priceChange": -8.44,
+      "priceChangePct": -1.84,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY",
@@ -884,7 +1106,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 420.55
+          "price": 450.24
         },
         "poc": {
           "label": "POC",
@@ -1002,10 +1224,10 @@ const stocksData = {
       "companyName": "Apple Inc.",
       "industry": "Consumer Electronics",
       "sector": "Technology",
-      "currentPrice": 189.5,
-      "priceChange": -1.2,
-      "priceChangePct": -0.63,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 312.06,
+      "priceChange": 112.11,
+      "priceChangePct": 56.07,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY THE DIP",
@@ -1036,7 +1258,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 189.5
+          "price": 312.06
         },
         "poc": {
           "label": "POC",
@@ -1154,10 +1376,10 @@ const stocksData = {
       "companyName": "Amazon.com, Inc.",
       "industry": "Internet Retail",
       "sector": "Consumer Cyclical",
-      "currentPrice": 182.2,
-      "priceChange": 2.15,
-      "priceChangePct": 1.19,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 270.64,
+      "priceChange": 64.94,
+      "priceChangePct": 31.57,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY",
@@ -1188,7 +1410,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 182.2
+          "price": 270.64
         },
         "poc": {
           "label": "POC",
@@ -1306,10 +1528,10 @@ const stocksData = {
       "companyName": "Meta Platforms",
       "industry": "Interactive Media",
       "sector": "Technology",
-      "currentPrice": 611.65,
-      "priceChange": 22.17,
-      "priceChangePct": 3.76,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 632.51,
+      "priceChange": -12.54,
+      "priceChangePct": -1.94,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY THE DIP",
@@ -1340,7 +1562,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 611.65
+          "price": 632.51
         },
         "poc": {
           "label": "POC",
@@ -1458,10 +1680,10 @@ const stocksData = {
       "companyName": "Tesla, Inc.",
       "industry": "Auto Manufacturers",
       "sector": "Consumer Cyclical",
-      "currentPrice": 178.5,
-      "priceChange": -3.2,
-      "priceChangePct": -1.76,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 435.79,
+      "priceChange": 77.36,
+      "priceChangePct": 21.58,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "REVERSAL SETUP",
@@ -1492,7 +1714,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 178.5
+          "price": 435.79
         },
         "poc": {
           "label": "POC",
@@ -1610,10 +1832,10 @@ const stocksData = {
       "companyName": "ASML Holding N.V.",
       "industry": "Semiconductors",
       "sector": "Technology",
-      "currentPrice": 1376.4,
-      "priceChange": -29.38,
-      "priceChangePct": -2.09,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 1612.76,
+      "priceChange": 865.69,
+      "priceChangePct": 115.88,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY",
@@ -1644,7 +1866,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 1376.4
+          "price": 1612.76
         },
         "poc": {
           "label": "POC",
@@ -2024,7 +2246,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 2.03x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 2.04x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2372,7 +2594,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.55x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.77x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2720,7 +2942,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.08x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.19x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2894,7 +3116,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.94x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.06x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3068,7 +3290,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.34x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.49x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3416,7 +3638,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.73x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.9x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3590,7 +3812,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.84x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.26x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3684,7 +3906,7 @@ const stocksData = {
     "overview": {
       "verdict": "NEUTRAL",
       "verdictConfidence": "Dynamic Quantitative Model",
-      "taScore": 1,
+      "taScore": 2,
       "viScore": 7,
       "moat": "Calculated Moat (High Growth)",
       "marginOfSafety": "5%"
@@ -3764,7 +3986,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.64x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.63x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3787,7 +4009,7 @@ const stocksData = {
         },
         {
           "label": "Trend Momentum",
-          "score": 10,
+          "score": 20,
           "color": "var(--color-accent)"
         },
         {
@@ -3816,7 +4038,7 @@ const stocksData = {
       }
     },
     "thesis": {
-      "statement": "หุ้น Nu Holdings (NU) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 1/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Financials",
+      "statement": "หุ้น Nu Holdings (NU) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 2/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Financials",
       "bullCase": [
         "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
         "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
@@ -3938,7 +4160,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.63x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.0x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4286,7 +4508,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 2.55x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 2.58x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4982,7 +5204,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.72x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.77x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5156,7 +5378,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.81x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.13x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5248,9 +5470,9 @@ const stocksData = {
       "analysisDate": "2026-05-28"
     },
     "overview": {
-      "verdict": "NEUTRAL",
+      "verdict": "ACCUMULATE",
       "verdictConfidence": "Dynamic Quantitative Model",
-      "taScore": 4,
+      "taScore": 5,
       "viScore": 5,
       "moat": "Calculated Moat (High Growth)",
       "marginOfSafety": "5%"
@@ -5312,7 +5534,7 @@ const stocksData = {
         }
       },
       "entry": {
-        "signal": "WAIT",
+        "signal": "BUY",
         "entryZone": "$234.98 - $244.88",
         "stopLoss": "$140.91",
         "takeProfit1": "$259.72",
@@ -5330,7 +5552,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.23x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.32x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5353,7 +5575,7 @@ const stocksData = {
         },
         {
           "label": "Trend Momentum",
-          "score": 40,
+          "score": 50,
           "color": "var(--color-accent)"
         },
         {
@@ -5382,7 +5604,7 @@ const stocksData = {
       }
     },
     "thesis": {
-      "statement": "หุ้น Datadog (DDOG) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "statement": "หุ้น Datadog (DDOG) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 5/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
       "bullCase": [
         "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
         "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
@@ -5394,11 +5616,11 @@ const stocksData = {
         "ระดับอัตราส่วนราคาต่อกำไร PE (54.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
       ],
       "recommendation": {
-        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "action": "ทยอยสะสม (Accumulate)",
         "targetPrice": "$259.72",
         "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
         "positionSize": "2-3%",
-        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($222.62) อย่างมั่นคง"
+        "entryStrategy": "เน้นการแบ่งไม้สะสมทีละส่วน (DCA) บริเวณแนวรับสำคัญ ไม่ควรซื้อไล่ราคาเมื่อราคาวิ่งเข้าใกล้แนวต้าน R1"
       },
       "keyRisks": [
         "การร่วงลงหลุดแนวรับสำคัญ S2 ($146.78) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
@@ -5504,7 +5726,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.66x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.9x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5678,7 +5900,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.91x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.02x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5772,7 +5994,7 @@ const stocksData = {
     "overview": {
       "verdict": "NEUTRAL",
       "verdictConfidence": "Dynamic Quantitative Model",
-      "taScore": 0,
+      "taScore": 2,
       "viScore": 5,
       "moat": "Calculated Moat (High Growth)",
       "marginOfSafety": "5%"
@@ -5852,7 +6074,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.29x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 2.44x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5875,7 +6097,7 @@ const stocksData = {
         },
         {
           "label": "Trend Momentum",
-          "score": 0,
+          "score": 20,
           "color": "var(--color-accent)"
         },
         {
@@ -5904,7 +6126,7 @@ const stocksData = {
       }
     },
     "thesis": {
-      "statement": "หุ้น Uber (UBER) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 0/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Industrials",
+      "statement": "หุ้น Uber (UBER) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 2/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Industrials",
       "bullCase": [
         "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
         "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
@@ -6026,7 +6248,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.62x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.63x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -6117,10 +6339,24 @@ const screenerData = [
     "pct": -1.84,
     "pe": 32.4,
     "rsi": 69.6,
-    "volSpike": 2.22,
+    "volSpike": 2.28,
     "aboveEma50": true,
     "aboveEma200": false,
     "score": 4
+  },
+  {
+    "symbol": "BTC-USD",
+    "name": "Bitcoin",
+    "sector": "Digital Asset",
+    "price": 73772.73,
+    "change": -30865.36,
+    "pct": -29.5,
+    "pe": 999.0,
+    "rsi": 37.4,
+    "volSpike": 0.58,
+    "aboveEma50": false,
+    "aboveEma200": false,
+    "score": 0
   },
   {
     "symbol": "AAPL",
@@ -6131,10 +6367,10 @@ const screenerData = [
     "pct": 56.07,
     "pe": 27.5,
     "rsi": 78.8,
-    "volSpike": 1.17,
+    "volSpike": 1.43,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 6
   },
   {
     "symbol": "NVDA",
@@ -6145,7 +6381,7 @@ const screenerData = [
     "pct": 51.69,
     "pe": 58.2,
     "rsi": 49.4,
-    "volSpike": 1.41,
+    "volSpike": 1.73,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 4
@@ -6187,7 +6423,7 @@ const screenerData = [
     "pct": -1.94,
     "pe": 24.5,
     "rsi": 55.4,
-    "volSpike": 1.31,
+    "volSpike": 1.32,
     "aboveEma50": true,
     "aboveEma200": false,
     "score": 4
@@ -6229,7 +6465,7 @@ const screenerData = [
     "pct": 112.25,
     "pe": 25.4,
     "rsi": 59.5,
-    "volSpike": 0.75,
+    "volSpike": 0.87,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 6
@@ -6271,7 +6507,7 @@ const screenerData = [
     "pct": 27.98,
     "pe": 82.0,
     "rsi": 67.4,
-    "volSpike": 2.03,
+    "volSpike": 2.04,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 4
@@ -6299,7 +6535,7 @@ const screenerData = [
     "pct": 356.6,
     "pe": 48.0,
     "rsi": 76.0,
-    "volSpike": 0.55,
+    "volSpike": 0.77,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 4
@@ -6327,7 +6563,7 @@ const screenerData = [
     "pct": -27.4,
     "pe": 36.4,
     "rsi": 37.1,
-    "volSpike": 1.08,
+    "volSpike": 1.19,
     "aboveEma50": false,
     "aboveEma200": false,
     "score": 0
@@ -6341,7 +6577,7 @@ const screenerData = [
     "pct": -24.04,
     "pe": 28.5,
     "rsi": 48.6,
-    "volSpike": 0.94,
+    "volSpike": 1.06,
     "aboveEma50": false,
     "aboveEma200": false,
     "score": 1
@@ -6355,7 +6591,7 @@ const screenerData = [
     "pct": 59.33,
     "pe": 72.0,
     "rsi": 83.8,
-    "volSpike": 1.34,
+    "volSpike": 1.49,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 5
@@ -6383,7 +6619,7 @@ const screenerData = [
     "pct": -8.45,
     "pe": 45.0,
     "rsi": 55.3,
-    "volSpike": 0.73,
+    "volSpike": 0.9,
     "aboveEma50": false,
     "aboveEma200": false,
     "score": 2
@@ -6397,7 +6633,7 @@ const screenerData = [
     "pct": 191.06,
     "pe": 38.5,
     "rsi": 45.4,
-    "volSpike": 0.84,
+    "volSpike": 1.26,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 3
@@ -6411,10 +6647,10 @@ const screenerData = [
     "pct": 9.51,
     "pe": 28.4,
     "rsi": 44.5,
-    "volSpike": 0.64,
+    "volSpike": 1.63,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 1
+    "score": 2
   },
   {
     "symbol": "MELI",
@@ -6425,7 +6661,7 @@ const screenerData = [
     "pct": -33.39,
     "pe": 46.5,
     "rsi": 50.0,
-    "volSpike": 0.63,
+    "volSpike": 1.0,
     "aboveEma50": false,
     "aboveEma200": false,
     "score": 1
@@ -6453,7 +6689,7 @@ const screenerData = [
     "pct": 47.46,
     "pe": 24.2,
     "rsi": 69.1,
-    "volSpike": 2.55,
+    "volSpike": 2.58,
     "aboveEma50": true,
     "aboveEma200": false,
     "score": 4
@@ -6509,7 +6745,7 @@ const screenerData = [
     "pct": 51.59,
     "pe": 48.0,
     "rsi": 80.5,
-    "volSpike": 1.72,
+    "volSpike": 1.77,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 5
@@ -6523,7 +6759,7 @@ const screenerData = [
     "pct": 47.31,
     "pe": 68.0,
     "rsi": 63.5,
-    "volSpike": 0.81,
+    "volSpike": 1.13,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 5
@@ -6537,10 +6773,10 @@ const screenerData = [
     "pct": 111.41,
     "pe": 54.0,
     "rsi": 87.5,
-    "volSpike": 1.23,
+    "volSpike": 1.32,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 5
   },
   {
     "symbol": "SNOW",
@@ -6551,7 +6787,7 @@ const screenerData = [
     "pct": 26.32,
     "pe": 62.0,
     "rsi": 86.9,
-    "volSpike": 1.66,
+    "volSpike": 1.9,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 4
@@ -6565,7 +6801,7 @@ const screenerData = [
     "pct": 3.86,
     "pe": 26.5,
     "rsi": 46.2,
-    "volSpike": 0.91,
+    "volSpike": 1.02,
     "aboveEma50": false,
     "aboveEma200": true,
     "score": 4
@@ -6579,10 +6815,10 @@ const screenerData = [
     "pct": -16.49,
     "pe": 31.4,
     "rsi": 37.8,
-    "volSpike": 1.29,
+    "volSpike": 2.44,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 0
+    "score": 2
   },
   {
     "symbol": "PATH",
@@ -6593,7 +6829,7 @@ const screenerData = [
     "pct": -9.43,
     "pe": 22.0,
     "rsi": 63.5,
-    "volSpike": 1.62,
+    "volSpike": 1.63,
     "aboveEma50": true,
     "aboveEma200": false,
     "score": 4
@@ -6604,7 +6840,7 @@ let activeStock = "GOOGL";
 document.addEventListener('DOMContentLoaded', () => {
   const selector = document.getElementById('stock-selector');
   if(selector) {
-    selector.innerHTML = `\n      <option value="GOOGL">Alphabet Inc (GOOGL)</option>\n      <option value="MU">Micron Technology (MU)</option>\n      <option value="TSM">Taiwan Semiconductor Mfg (TSM)</option>\n      <option value="NVDA">NVIDIA Corp (NVDA)</option>\n      <option value="META">Meta Platforms (META)</option>\n      <option value="ASML">ASML Holding N.V (ASML)</option>\n      <option value="MSFT">Microsoft Corporation (MSFT)</option>\n      <option value="AAPL">Apple Inc (AAPL)</option>\n      <option value="AMZN">Amazon.com, Inc (AMZN)</option>\n      <option value="TSLA">Tesla, Inc (TSLA)</option>\n    `;
+    selector.innerHTML = `\n      <option value="GOOGL">Alphabet Inc (GOOGL)</option>\n      <option value="MU">Micron Technology (MU)</option>\n      <option value="TSM">Taiwan Semiconductor Mfg (TSM)</option>\n      <option value="NVDA">NVIDIA Corp (NVDA)</option>\n      <option value="META">Meta Platforms (META)</option>\n      <option value="ASML">ASML Holding N.V (ASML)</option>\n      <option value="MSFT">Microsoft Corporation (MSFT)</option>\n      <option value="AAPL">Apple Inc (AAPL)</option>\n      <option value="AMZN">Amazon.com, Inc (AMZN)</option>\n      <option value="TSLA">Tesla, Inc (TSLA)</option>\n      <option value="BTC-USD">Bitcoin (BTC-USD)</option>\n    `;
     selector.value = activeStock;
   }
   
@@ -7064,6 +7300,27 @@ function renderTechnical(ta) {
 }
 
 function renderFundamental(fund) {
+  // Dynamically change financial card titles for Bitcoin / Crypto
+  if (activeStock === 'BTC-USD') {
+    const incCard = document.querySelector('#income-card .fin-card-title');
+    const balCard = document.querySelector('#balance-card .fin-card-title');
+    const cfCard = document.querySelector('#cashflow-card .fin-card-title');
+    const valCard = document.querySelector('#valuation-card .fin-card-title');
+    if (incCard) incCard.innerHTML = '📊 Network Security & Adoption';
+    if (balCard) balCard.innerHTML = '📋 Token Supply & Scarcity';
+    if (cfCard) cfCard.innerHTML = '💰 Transaction & Settlement';
+    if (valCard) valCard.innerHTML = '🎯 On-Chain Valuation';
+  } else {
+    const incCard = document.querySelector('#income-card .fin-card-title');
+    const balCard = document.querySelector('#balance-card .fin-card-title');
+    const cfCard = document.querySelector('#cashflow-card .fin-card-title');
+    const valCard = document.querySelector('#valuation-card .fin-card-title');
+    if (incCard) incCard.innerHTML = '📊 Income Statement';
+    if (balCard) balCard.innerHTML = '📋 Balance Sheet';
+    if (cfCard) cfCard.innerHTML = '💰 Cash Flow';
+    if (valCard) valCard.innerHTML = '🎯 Valuation';
+  }
+
   let incomeRows = fund.incomeStatement;
   let balanceRows = fund.balanceSheet;
   let cashflowRows = fund.cashflow;

@@ -10,10 +10,10 @@ const stocksData = {
       "companyName": "Microsoft Corporation",
       "industry": "Software - Infrastructure",
       "sector": "Technology",
-      "currentPrice": 420.55,
-      "priceChange": 3.42,
-      "priceChangePct": 0.82,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 450.24,
+      "priceChange": -8.44,
+      "priceChangePct": -1.84,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY",
@@ -44,7 +44,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 420.55
+          "price": 450.24
         },
         "poc": {
           "label": "POC",
@@ -162,10 +162,10 @@ const stocksData = {
       "companyName": "Apple Inc.",
       "industry": "Consumer Electronics",
       "sector": "Technology",
-      "currentPrice": 189.5,
-      "priceChange": -1.2,
-      "priceChangePct": -0.63,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 312.06,
+      "priceChange": 112.11,
+      "priceChangePct": 56.07,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY THE DIP",
@@ -196,7 +196,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 189.5
+          "price": 312.06
         },
         "poc": {
           "label": "POC",
@@ -314,10 +314,10 @@ const stocksData = {
       "companyName": "Amazon.com, Inc.",
       "industry": "Internet Retail",
       "sector": "Consumer Cyclical",
-      "currentPrice": 182.2,
-      "priceChange": 2.15,
-      "priceChangePct": 1.19,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 270.64,
+      "priceChange": 64.94,
+      "priceChangePct": 31.57,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY",
@@ -348,7 +348,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 182.2
+          "price": 270.64
         },
         "poc": {
           "label": "POC",
@@ -466,10 +466,10 @@ const stocksData = {
       "companyName": "Meta Platforms",
       "industry": "Interactive Media",
       "sector": "Technology",
-      "currentPrice": 611.65,
-      "priceChange": 22.17,
-      "priceChangePct": 3.76,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 632.51,
+      "priceChange": -12.54,
+      "priceChangePct": -1.94,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY THE DIP",
@@ -500,7 +500,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 611.65
+          "price": 632.51
         },
         "poc": {
           "label": "POC",
@@ -618,10 +618,10 @@ const stocksData = {
       "companyName": "Tesla, Inc.",
       "industry": "Auto Manufacturers",
       "sector": "Consumer Cyclical",
-      "currentPrice": 178.5,
-      "priceChange": -3.2,
-      "priceChangePct": -1.76,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 435.79,
+      "priceChange": 77.36,
+      "priceChangePct": 21.58,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "REVERSAL SETUP",
@@ -652,7 +652,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 178.5
+          "price": 435.79
         },
         "poc": {
           "label": "POC",
@@ -770,10 +770,10 @@ const stocksData = {
       "companyName": "ASML Holding N.V.",
       "industry": "Semiconductors",
       "sector": "Technology",
-      "currentPrice": 1376.4,
-      "priceChange": -29.38,
-      "priceChangePct": -2.09,
-      "analysisDate": "2026-05-28"
+      "currentPrice": 1612.76,
+      "priceChange": 865.69,
+      "priceChangePct": 115.88,
+      "analysisDate": "2026-05-31"
     },
     "overview": {
       "verdict": "BUY",
@@ -804,7 +804,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 1376.4
+          "price": 1612.76
         },
         "poc": {
           "label": "POC",
@@ -1184,7 +1184,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 2.03x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 2.04x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -1532,7 +1532,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.55x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.77x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -1880,7 +1880,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.08x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.19x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2054,7 +2054,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.94x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.06x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2228,7 +2228,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.34x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.49x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2576,7 +2576,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.73x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.9x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2750,7 +2750,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.84x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.26x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2844,7 +2844,7 @@ const stocksData = {
     "overview": {
       "verdict": "NEUTRAL",
       "verdictConfidence": "Dynamic Quantitative Model",
-      "taScore": 1,
+      "taScore": 2,
       "viScore": 7,
       "moat": "Calculated Moat (High Growth)",
       "marginOfSafety": "5%"
@@ -2924,7 +2924,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.64x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.63x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2947,7 +2947,7 @@ const stocksData = {
         },
         {
           "label": "Trend Momentum",
-          "score": 10,
+          "score": 20,
           "color": "var(--color-accent)"
         },
         {
@@ -2976,7 +2976,7 @@ const stocksData = {
       }
     },
     "thesis": {
-      "statement": "หุ้น Nu Holdings (NU) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 1/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Financials",
+      "statement": "หุ้น Nu Holdings (NU) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 2/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Financials",
       "bullCase": [
         "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
         "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
@@ -3098,7 +3098,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.63x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.0x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3446,7 +3446,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 2.55x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 2.58x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4142,7 +4142,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.72x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.77x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4316,7 +4316,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.81x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.13x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4408,9 +4408,9 @@ const stocksData = {
       "analysisDate": "2026-05-28"
     },
     "overview": {
-      "verdict": "NEUTRAL",
+      "verdict": "ACCUMULATE",
       "verdictConfidence": "Dynamic Quantitative Model",
-      "taScore": 4,
+      "taScore": 5,
       "viScore": 5,
       "moat": "Calculated Moat (High Growth)",
       "marginOfSafety": "5%"
@@ -4472,7 +4472,7 @@ const stocksData = {
         }
       },
       "entry": {
-        "signal": "WAIT",
+        "signal": "BUY",
         "entryZone": "$234.98 - $244.88",
         "stopLoss": "$140.91",
         "takeProfit1": "$259.72",
@@ -4490,7 +4490,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.23x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.32x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4513,7 +4513,7 @@ const stocksData = {
         },
         {
           "label": "Trend Momentum",
-          "score": 40,
+          "score": 50,
           "color": "var(--color-accent)"
         },
         {
@@ -4542,7 +4542,7 @@ const stocksData = {
       }
     },
     "thesis": {
-      "statement": "หุ้น Datadog (DDOG) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 4/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "statement": "หุ้น Datadog (DDOG) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 5/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
       "bullCase": [
         "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
         "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
@@ -4554,11 +4554,11 @@ const stocksData = {
         "ระดับอัตราส่วนราคาต่อกำไร PE (54.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
       ],
       "recommendation": {
-        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "action": "ทยอยสะสม (Accumulate)",
         "targetPrice": "$259.72",
         "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
         "positionSize": "2-3%",
-        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($222.62) อย่างมั่นคง"
+        "entryStrategy": "เน้นการแบ่งไม้สะสมทีละส่วน (DCA) บริเวณแนวรับสำคัญ ไม่ควรซื้อไล่ราคาเมื่อราคาวิ่งเข้าใกล้แนวต้าน R1"
       },
       "keyRisks": [
         "การร่วงลงหลุดแนวรับสำคัญ S2 ($146.78) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
@@ -4664,7 +4664,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.66x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.9x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4838,7 +4838,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.91x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.02x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4932,7 +4932,7 @@ const stocksData = {
     "overview": {
       "verdict": "NEUTRAL",
       "verdictConfidence": "Dynamic Quantitative Model",
-      "taScore": 0,
+      "taScore": 2,
       "viScore": 5,
       "moat": "Calculated Moat (High Growth)",
       "marginOfSafety": "5%"
@@ -5012,7 +5012,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.29x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 2.44x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5035,7 +5035,7 @@ const stocksData = {
         },
         {
           "label": "Trend Momentum",
-          "score": 0,
+          "score": 20,
           "color": "var(--color-accent)"
         },
         {
@@ -5064,7 +5064,7 @@ const stocksData = {
       }
     },
     "thesis": {
-      "statement": "หุ้น Uber (UBER) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 0/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Industrials",
+      "statement": "หุ้น Uber (UBER) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 2/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Industrials",
       "bullCase": [
         "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
         "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
@@ -5186,7 +5186,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.62x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.63x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5277,10 +5277,24 @@ const screenerData = [
     "pct": -1.84,
     "pe": 32.4,
     "rsi": 69.6,
-    "volSpike": 2.22,
+    "volSpike": 2.28,
     "aboveEma50": true,
     "aboveEma200": false,
     "score": 4
+  },
+  {
+    "symbol": "BTC-USD",
+    "name": "Bitcoin",
+    "sector": "Digital Asset",
+    "price": 73772.73,
+    "change": -30865.36,
+    "pct": -29.5,
+    "pe": 999.0,
+    "rsi": 37.4,
+    "volSpike": 0.58,
+    "aboveEma50": false,
+    "aboveEma200": false,
+    "score": 0
   },
   {
     "symbol": "AAPL",
@@ -5291,10 +5305,10 @@ const screenerData = [
     "pct": 56.07,
     "pe": 27.5,
     "rsi": 78.8,
-    "volSpike": 1.17,
+    "volSpike": 1.43,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 6
   },
   {
     "symbol": "NVDA",
@@ -5305,7 +5319,7 @@ const screenerData = [
     "pct": 51.69,
     "pe": 58.2,
     "rsi": 49.4,
-    "volSpike": 1.41,
+    "volSpike": 1.73,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 4
@@ -5347,7 +5361,7 @@ const screenerData = [
     "pct": -1.94,
     "pe": 24.5,
     "rsi": 55.4,
-    "volSpike": 1.31,
+    "volSpike": 1.32,
     "aboveEma50": true,
     "aboveEma200": false,
     "score": 4
@@ -5389,7 +5403,7 @@ const screenerData = [
     "pct": 112.25,
     "pe": 25.4,
     "rsi": 59.5,
-    "volSpike": 0.75,
+    "volSpike": 0.87,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 6
@@ -5431,7 +5445,7 @@ const screenerData = [
     "pct": 27.98,
     "pe": 82.0,
     "rsi": 67.4,
-    "volSpike": 2.03,
+    "volSpike": 2.04,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 4
@@ -5459,7 +5473,7 @@ const screenerData = [
     "pct": 356.6,
     "pe": 48.0,
     "rsi": 76.0,
-    "volSpike": 0.55,
+    "volSpike": 0.77,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 4
@@ -5487,7 +5501,7 @@ const screenerData = [
     "pct": -27.4,
     "pe": 36.4,
     "rsi": 37.1,
-    "volSpike": 1.08,
+    "volSpike": 1.19,
     "aboveEma50": false,
     "aboveEma200": false,
     "score": 0
@@ -5501,7 +5515,7 @@ const screenerData = [
     "pct": -24.04,
     "pe": 28.5,
     "rsi": 48.6,
-    "volSpike": 0.94,
+    "volSpike": 1.06,
     "aboveEma50": false,
     "aboveEma200": false,
     "score": 1
@@ -5515,7 +5529,7 @@ const screenerData = [
     "pct": 59.33,
     "pe": 72.0,
     "rsi": 83.8,
-    "volSpike": 1.34,
+    "volSpike": 1.49,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 5
@@ -5543,7 +5557,7 @@ const screenerData = [
     "pct": -8.45,
     "pe": 45.0,
     "rsi": 55.3,
-    "volSpike": 0.73,
+    "volSpike": 0.9,
     "aboveEma50": false,
     "aboveEma200": false,
     "score": 2
@@ -5557,7 +5571,7 @@ const screenerData = [
     "pct": 191.06,
     "pe": 38.5,
     "rsi": 45.4,
-    "volSpike": 0.84,
+    "volSpike": 1.26,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 3
@@ -5571,10 +5585,10 @@ const screenerData = [
     "pct": 9.51,
     "pe": 28.4,
     "rsi": 44.5,
-    "volSpike": 0.64,
+    "volSpike": 1.63,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 1
+    "score": 2
   },
   {
     "symbol": "MELI",
@@ -5585,7 +5599,7 @@ const screenerData = [
     "pct": -33.39,
     "pe": 46.5,
     "rsi": 50.0,
-    "volSpike": 0.63,
+    "volSpike": 1.0,
     "aboveEma50": false,
     "aboveEma200": false,
     "score": 1
@@ -5613,7 +5627,7 @@ const screenerData = [
     "pct": 47.46,
     "pe": 24.2,
     "rsi": 69.1,
-    "volSpike": 2.55,
+    "volSpike": 2.58,
     "aboveEma50": true,
     "aboveEma200": false,
     "score": 4
@@ -5669,7 +5683,7 @@ const screenerData = [
     "pct": 51.59,
     "pe": 48.0,
     "rsi": 80.5,
-    "volSpike": 1.72,
+    "volSpike": 1.77,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 5
@@ -5683,7 +5697,7 @@ const screenerData = [
     "pct": 47.31,
     "pe": 68.0,
     "rsi": 63.5,
-    "volSpike": 0.81,
+    "volSpike": 1.13,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 5
@@ -5697,10 +5711,10 @@ const screenerData = [
     "pct": 111.41,
     "pe": 54.0,
     "rsi": 87.5,
-    "volSpike": 1.23,
+    "volSpike": 1.32,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 5
   },
   {
     "symbol": "SNOW",
@@ -5711,7 +5725,7 @@ const screenerData = [
     "pct": 26.32,
     "pe": 62.0,
     "rsi": 86.9,
-    "volSpike": 1.66,
+    "volSpike": 1.9,
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 4
@@ -5725,7 +5739,7 @@ const screenerData = [
     "pct": 3.86,
     "pe": 26.5,
     "rsi": 46.2,
-    "volSpike": 0.91,
+    "volSpike": 1.02,
     "aboveEma50": false,
     "aboveEma200": true,
     "score": 4
@@ -5739,10 +5753,10 @@ const screenerData = [
     "pct": -16.49,
     "pe": 31.4,
     "rsi": 37.8,
-    "volSpike": 1.29,
+    "volSpike": 2.44,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 0
+    "score": 2
   },
   {
     "symbol": "PATH",
@@ -5753,7 +5767,7 @@ const screenerData = [
     "pct": -9.43,
     "pe": 22.0,
     "rsi": 63.5,
-    "volSpike": 1.62,
+    "volSpike": 1.63,
     "aboveEma50": true,
     "aboveEma200": false,
     "score": 4
@@ -6224,6 +6238,27 @@ function renderTechnical(ta) {
 }
 
 function renderFundamental(fund) {
+  // Dynamically change financial card titles for Bitcoin / Crypto
+  if (activeStock === 'BTC-USD') {
+    const incCard = document.querySelector('#income-card .fin-card-title');
+    const balCard = document.querySelector('#balance-card .fin-card-title');
+    const cfCard = document.querySelector('#cashflow-card .fin-card-title');
+    const valCard = document.querySelector('#valuation-card .fin-card-title');
+    if (incCard) incCard.innerHTML = '📊 Network Security & Adoption';
+    if (balCard) balCard.innerHTML = '📋 Token Supply & Scarcity';
+    if (cfCard) cfCard.innerHTML = '💰 Transaction & Settlement';
+    if (valCard) valCard.innerHTML = '🎯 On-Chain Valuation';
+  } else {
+    const incCard = document.querySelector('#income-card .fin-card-title');
+    const balCard = document.querySelector('#balance-card .fin-card-title');
+    const cfCard = document.querySelector('#cashflow-card .fin-card-title');
+    const valCard = document.querySelector('#valuation-card .fin-card-title');
+    if (incCard) incCard.innerHTML = '📊 Income Statement';
+    if (balCard) balCard.innerHTML = '📋 Balance Sheet';
+    if (cfCard) cfCard.innerHTML = '💰 Cash Flow';
+    if (valCard) valCard.innerHTML = '🎯 Valuation';
+  }
+
   let incomeRows = fund.incomeStatement;
   let balanceRows = fund.balanceSheet;
   let cashflowRows = fund.cashflow;
