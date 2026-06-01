@@ -1895,7 +1895,6 @@ function renderChecklist(data) {{
   step3Status.textContent = 'รอสัญญาณ';
   step3Desc.textContent = `รอสัญญาณกดยิงคำสั่งซื้อ: เฝ้าดูแท่งเทียน Day ของวันนี้ หากปิดดึงกลับขึ้นเป็น "แท่งสีเขียว" บริเวณโซนสะสม ให้เริ่มเข้าช้อนไม้แรกได้ทันที!`;
 }}
-}}
 """
 
 def generate_js_content(title, stocks_list, active_stock, stocks_data_dict, selector_options, screener_data):

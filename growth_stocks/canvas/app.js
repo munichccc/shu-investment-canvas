@@ -5460,9 +5460,9 @@ const screenerData = [
     "symbol": "BTC-USD",
     "name": "Bitcoin",
     "sector": "Digital Asset",
-    "price": 72772.71,
-    "change": -32879.39,
-    "pct": -31.12,
+    "price": 72767.86,
+    "change": -32884.24,
+    "pct": -31.13,
     "pe": 999.0,
     "rsi": 34.1,
     "volSpike": 0.8,
@@ -6672,5 +6672,4 @@ function renderChecklist(data) {
   step3Status.className = 'check-badge status-wait';
   step3Status.textContent = 'รอสัญญาณ';
   step3Desc.textContent = `รอสัญญาณกดยิงคำสั่งซื้อ: เฝ้าดูแท่งเทียน Day ของวันนี้ หากปิดดึงกลับขึ้นเป็น "แท่งสีเขียว" บริเวณโซนสะสม ให้เริ่มเข้าช้อนไม้แรกได้ทันที!`;
-}
 }
