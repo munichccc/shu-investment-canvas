@@ -1471,10 +1471,11 @@ function renderAll(data) {{
   renderTechnical(data.technical);
   renderFundamental(data.fundamental);
   renderThesis(data.thesis);
+  renderChecklist(data);
 
   // Animate in
   requestAnimationFrame(() => {{
-    document.querySelectorAll('.stat-card, .summary-card, .ta-card, .fin-card, .entry-card, .risk-card, .rationale-card, .moat-card, .grade-card, .thesis-hero, .case-card, .recommendation-card, .risks-card, .sources-card, .screener-card').forEach((el, i) => {{
+    document.querySelectorAll('.stat-card, .summary-card, .ta-card, .fin-card, .entry-card, .risk-card, .rationale-card, .moat-card, .grade-card, .thesis-hero, .case-card, .recommendation-card, .risks-card, .sources-card, .screener-card, .checklist-card').forEach((el, i) => {{
       el.classList.remove('animate-in');
       void el.offsetWidth; // Trigger reflow for animation restart
       el.classList.add('animate-in', `stagger-${{Math.min(i + 1, 6)}}`);
@@ -1823,6 +1824,77 @@ function renderThesis(thesis) {{
       <span class="source-tag">📖 ${{s}}</span>
     `).join('');
   }}
+}}
+
+function renderChecklist(data) {{
+  const step1Box = document.querySelector('#check-step1 .check-box');
+  const step1Status = document.getElementById('check-step1-status');
+  const step1Desc = document.getElementById('check-step1-desc');
+  
+  const step2Box = document.getElementById('check-step2-box');
+  const step2Status = document.getElementById('check-step2-status');
+  const step2Desc = document.getElementById('check-step2-desc');
+  
+  const step3Box = document.getElementById('check-step3-box');
+  const step3Status = document.getElementById('check-step3-status');
+  const step3Desc = document.getElementById('check-step3-desc');
+
+  if (!step1Box || !step2Box || !step3Box) return;
+
+  // 1. Check step 1: Fundamental Strength
+  const moat = data.overview.moat || "None";
+  const viScore = data.overview.viScore || 0;
+  if (moat.includes('Wide') || moat.includes('Network') || moat.includes('Narrow') || viScore >= 6) {{
+    step1Box.className = 'check-box checked';
+    step1Box.textContent = '✓';
+    step1Status.className = 'check-badge status-pass';
+    step1Status.textContent = 'ผ่านเกณฑ์แกร่ง';
+    step1Desc.textContent = `พื้นฐานแกร่ง: หุ้นมี Moat (${{moat}}) และคะแนนสะสม VI Score ${{viScore}}/10`;
+  }} else {{
+    step1Box.className = 'check-box warning';
+    step1Box.textContent = '⚠️';
+    step1Status.className = 'check-badge status-warning';
+    step1Status.textContent = 'เฝ้าระวัง';
+    step1Desc.textContent = `พื้นฐานปานกลาง/รอสะสม: Moat (${{moat}}) และคะแนนสะสม VI Score ${{viScore}}/10`;
+  }}
+
+  // 2. Check step 2: Price Filter (Antigravity Zone / EMA 50-200)
+  const currentPrice = data.meta.currentPrice;
+  const entryZone = data.technical.entry.entryZone || "";
+  const matches = entryZone.match(/\\d+[\\d,.]*/g);
+  let isEntryZone = false;
+  
+  if (matches && matches.length >= 2) {{
+    const low = parseFloat(matches[0].replace(/,/g, ''));
+    const high = parseFloat(matches[1].replace(/,/g, ''));
+    if (currentPrice <= high) {{
+      isEntryZone = true;
+    }}
+  }} else if (data.overview.taScore >= 6) {{
+    isEntryZone = true;
+  }}
+
+  if (isEntryZone) {{
+    step2Box.className = 'check-box checked';
+    step2Box.textContent = '✓';
+    step2Status.className = 'check-badge status-pass';
+    step2Status.textContent = 'เข้าโซนสะสม';
+    step2Desc.textContent = `ราคาได้เปรียบ: ราคาปัจจุบัน ($${{currentPrice === 'N/A' || !currentPrice ? 'N/A' : currentPrice.toFixed(2)}}) ต่ำกว่าหรืออยู่ในโซนตั้งรับสะสม (${{entryZone}})`;
+  }} else {{
+    step2Box.className = 'check-box';
+    step2Box.textContent = '—';
+    step2Status.className = 'check-badge status-wait';
+    step2Status.textContent = 'ราคาสูงเกินไป';
+    step2Desc.textContent = `รอการย่อตัว: ราคาปัจจุบัน ($${{currentPrice === 'N/A' || !currentPrice ? 'N/A' : currentPrice.toFixed(2)}}) ยังสูงกว่าโซนตั้งรับสะสม (${{entryZone}})`;
+  }}
+
+  // 3. Step 3: Candle Day Trigger (Instruction)
+  step3Box.className = 'check-box';
+  step3Box.textContent = '⏳';
+  step3Status.className = 'check-badge status-wait';
+  step3Status.textContent = 'รอสัญญาณ';
+  step3Desc.textContent = `รอสัญญาณกดยิงคำสั่งซื้อ: เฝ้าดูแท่งเทียน Day ของวันนี้ หากปิดดึงกลับขึ้นเป็น "แท่งสีเขียว" บริเวณโซนสะสม ให้เริ่มเข้าช้อนไม้แรกได้ทันที!`;
+}}
 }}
 """
 
