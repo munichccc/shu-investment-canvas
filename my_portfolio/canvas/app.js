@@ -13,7 +13,7 @@ const stocksData = {
       "currentPrice": 380.34,
       "priceChange": 208.48,
       "priceChangePct": 121.31,
-      "analysisDate": "2026-05-31"
+      "analysisDate": "2026-06-01"
     },
     "overview": {
       "verdict": "BUY",
@@ -223,7 +223,7 @@ const stocksData = {
       "currentPrice": 971.0,
       "priceChange": 874.2,
       "priceChangePct": 903.1,
-      "analysisDate": "2026-05-31"
+      "analysisDate": "2026-06-01"
     },
     "overview": {
       "verdict": "BUY / ACCUMULATE",
@@ -433,7 +433,7 @@ const stocksData = {
       "currentPrice": 418.45,
       "priceChange": 221.3,
       "priceChangePct": 112.25,
-      "analysisDate": "2026-05-31"
+      "analysisDate": "2026-06-01"
     },
     "overview": {
       "verdict": "BUY",
@@ -643,7 +643,7 @@ const stocksData = {
       "currentPrice": 211.14,
       "priceChange": 71.95,
       "priceChangePct": 51.69,
-      "analysisDate": "2026-05-31"
+      "analysisDate": "2026-06-01"
     },
     "overview": {
       "verdict": "HOLD / ACCUMULATE",
@@ -850,10 +850,10 @@ const stocksData = {
       "companyName": "Bitcoin",
       "industry": "Cryptocurrency",
       "sector": "Digital Asset",
-      "currentPrice": 73772.73,
-      "priceChange": -30865.36,
-      "priceChangePct": -29.5,
-      "analysisDate": "2026-05-31"
+      "currentPrice": 72770.93,
+      "priceChange": -32881.17,
+      "priceChangePct": -31.12,
+      "analysisDate": "2026-06-01"
     },
     "overview": {
       "verdict": "BUY",
@@ -884,7 +884,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 73772.73
+          "price": 72770.93
         },
         "poc": {
           "label": "POC",
@@ -1232,6 +1232,180 @@ const stocksData = {
       },
       "keyRisks": [
         "การร่วงลงหลุดแนวรับสำคัญ S2 ($201.57) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
+        "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
+      ],
+      "sources": [
+        "Yahoo Finance API Real-Time Technical Feed",
+        "Shu Algorithmic Daily Breakout Engine"
+      ]
+    }
+  },
+  "NOW": {
+    "meta": {
+      "symbol": "NOW",
+      "companyName": "ServiceNow",
+      "industry": "Software & Tech Growth",
+      "sector": "Technology",
+      "currentPrice": 124.37,
+      "priceChange": -78.68,
+      "priceChangePct": -38.75,
+      "analysisDate": "2026-05-28"
+    },
+    "overview": {
+      "verdict": "NEUTRAL",
+      "verdictConfidence": "Dynamic Quantitative Model",
+      "taScore": 3,
+      "viScore": 5,
+      "moat": "Calculated Moat (High Growth)",
+      "marginOfSafety": "5%"
+    },
+    "technical": {
+      "condition": "โมเมนตัมรายวัน (ขาขึ้นแข็งแกร่ง)",
+      "trend": {
+        "direction": "Sideways",
+        "strength": "Moderate",
+        "timeframes": [
+          {
+            "tf": "Daily",
+            "bias": "bullish",
+            "note": "ราคาประคองตัวในทิศทางได้เปรียบ มีแนวรับสำคัญที่ระดับ $101.09"
+          },
+          {
+            "tf": "Weekly",
+            "bias": "neutral",
+            "note": "ฐานระยะยาวยังคงขับเคลื่อนด้วยแนวโน้มขาขึ้นหลัก"
+          }
+        ]
+      },
+      "levels": {
+        "current": {
+          "label": "Current",
+          "price": 124.37
+        },
+        "poc": {
+          "label": "POC",
+          "price": 119.4
+        },
+        "resistances": [
+          {
+            "label": "R1",
+            "price": 130.59
+          },
+          {
+            "label": "R2",
+            "price": 139.29
+          }
+        ],
+        "supports": [
+          {
+            "label": "S1",
+            "price": 101.09
+          },
+          {
+            "label": "S2",
+            "price": 111.93
+          }
+        ],
+        "vah": {
+          "label": "VAH",
+          "price": 128.1
+        },
+        "val": {
+          "label": "VAL",
+          "price": 113.18
+        }
+      },
+      "entry": {
+        "signal": "WAIT",
+        "entryZone": "$118.15 - $123.13",
+        "stopLoss": "$107.45",
+        "takeProfit1": "$130.59",
+        "takeProfit2": "$139.29",
+        "rrRatio": "1:0.4",
+        "confidence": "Medium-High (Algo generated)"
+      },
+      "confluences": [
+        {
+          "name": "ราคายืนเหนือเส้นค่าเฉลี่ย EMA 50 ($101.09) สะท้อนภาพขาขึ้นระยะกลาง",
+          "confirmed": true
+        },
+        {
+          "name": "ดัชนี RSI อยู่ที่ระดับ 73.6 บ่งชี้กำลังซื้อมีความแข็งแกร่งเชิงโมเมนตัม",
+          "confirmed": false
+        },
+        {
+          "name": "สถิติ Institution Vol Spike 2.2x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "confirmed": false
+        }
+      ],
+      "risk": {
+        "positionSize": "2-3%",
+        "riskPct": "6-8%",
+        "riskReward": "1:0.4",
+        "trailingStop": "$6.52",
+        "maxLoss": "$8.70",
+        "atr14": "$4.35"
+      }
+    },
+    "fundamental": {
+      "overallGrade": "B",
+      "gradeBreakdown": [
+        {
+          "label": "Valuation Strength",
+          "score": 40,
+          "color": "var(--color-bearish)"
+        },
+        {
+          "label": "Trend Momentum",
+          "score": 30,
+          "color": "var(--color-accent)"
+        },
+        {
+          "label": "Efficiency Score",
+          "score": 75,
+          "color": "#10b981"
+        }
+      ],
+      "ratios": {
+        "operatingMargin": "22.5%",
+        "roe": "24.8%",
+        "pegRatio": "2.5",
+        "debtToEquity": "0.45",
+        "currentRatio": "1.5"
+      },
+      "cashFlow": {
+        "operatingCashFlow": "N/A (Algo)",
+        "freeCashFlow": "N/A (Algo)",
+        "cashConversionCycle": "-15 วัน"
+      },
+      "valuation": {
+        "forwardPE": "55.0",
+        "beta": "1.22",
+        "dividendYield": "0.42%",
+        "marketCap": "Calculated (Algo)"
+      }
+    },
+    "thesis": {
+      "statement": "หุ้น ServiceNow (NOW) ผ่านเกณฑ์คัดกรองโมเมนตัมทางเทคนิคประจำวันด้วยคะแนนสแกน 3/10 มีโครงสร้างราคาที่ได้เปรียบเชิงสถิติระยะสั้นและหนุนด้วยปัจจัยพื้นฐานอุตสาหกรรม Technology",
+      "bullCase": [
+        "ราคาผ่านการทะลุกรอบและสร้างฐานเหนือเส้นค่าเฉลี่ยหลักทางเทคนิคอย่างสมบูรณ์",
+        "สถิติโมเมนตัมและอินดิเคเตอร์ RSI สะท้อนแรงสะสมของแรงซื้อขนาดใหญ่ที่ทวีความชันขึ้น",
+        "จุดซื้อขายทางเทคนิคมีแต้มต่อเชิงความเสี่ยงและอัตราผลตอบแทน Risk:Reward Ratio (1:0.4) ที่ได้เปรียบสูง"
+      ],
+      "bearCase": [
+        "ความเสี่ยงความผันผวนทางอ้อมจากดัชนีภาพรวมตลาดสหรัฐฯ หรืออัตราเงินเฟ้อประกาศรายสัปดาห์",
+        "สัญญานทางเทคนิคระยะสั้นในกราฟรายวันอาจมีการดึงตัวกลับเข้าหาเส้น EMA เพื่อลดระดับความร้อนแรง",
+        "ระดับอัตราส่วนราคาต่อกำไร PE (55.0x) สะท้อนความต้องการและการเก็งกำไรโมเมนตัมที่สูงในตลาดเชิงเปรียบเทียบ"
+      ],
+      "recommendation": {
+        "action": "ถือครอง / รอจังหวะ (Hold/Wait)",
+        "targetPrice": "$130.59",
+        "timeHorizon": "3-6 เดือน (เก็งกำไรตามรอบสัญญาน)",
+        "positionSize": "2-3%",
+        "entryStrategy": "แนะนำรอสัญญาณทางเทคนิคฟื้นตัวชัดเจน หรือรอให้ราคายืนเหนือแนวรับระดับสำคัญ S2 ($111.93) อย่างมั่นคง"
+      },
+      "keyRisks": [
+        "การร่วงลงหลุดแนวรับสำคัญ S2 ($111.93) จะถือเป็นสัญญาณตัดขาดทุน (Stop Loss) เพื่อรักษาทุนอย่างเคร่งครัด",
         "แรงเทขายทำกำไรระยะสั้นในกลุ่มอุตสาหกรรมอ้างอิงหลังวิ่งเข้าใกล้โซนแนวต้านหลัก"
       ],
       "sources": [
@@ -5436,15 +5610,15 @@ const screenerData = [
     "symbol": "BTC-USD",
     "name": "Bitcoin",
     "sector": "Digital Asset",
-    "price": 73772.73,
-    "change": -30865.36,
-    "pct": -29.5,
+    "price": 72770.93,
+    "change": -32881.17,
+    "pct": -31.12,
     "pe": 999.0,
-    "rsi": 37.4,
-    "volSpike": 0.58,
+    "rsi": 34.1,
+    "volSpike": 0.78,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 0
+    "score": 1
   },
   {
     "symbol": "AAPL",
@@ -5585,6 +5759,20 @@ const screenerData = [
     "aboveEma50": true,
     "aboveEma200": true,
     "score": 5
+  },
+  {
+    "symbol": "NOW",
+    "name": "ServiceNow",
+    "sector": "Technology",
+    "price": 124.37,
+    "change": -78.68,
+    "pct": -38.75,
+    "pe": 55.0,
+    "rsi": 73.6,
+    "volSpike": 2.2,
+    "aboveEma50": true,
+    "aboveEma200": false,
+    "score": 3
   },
   {
     "symbol": "PLTR",
