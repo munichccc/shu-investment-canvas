@@ -2199,9 +2199,6 @@ for sym, meta_static in watchlist_metadata.items():
             result = res['chart']['result'][0]
             meta = result['meta']
             current_price = round(meta['regularMarketPrice'], 2)
-            prev_close = meta['chartPreviousClose']
-            change = round(current_price - prev_close, 2)
-            pct = round((change / prev_close) * 100, 2)
             
             indicators = result['indicators']['quote'][0]
             closes_raw = indicators.get('close', [])
@@ -2213,6 +2210,15 @@ for sym, meta_static in watchlist_metadata.items():
             
             if not closes:
                 continue
+                
+            # Get actual daily previous close for daily change calculations
+            if len(closes) >= 2:
+                prev_close = closes[-2]
+            else:
+                prev_close = meta.get('chartPreviousClose', current_price)
+                
+            change = round(current_price - prev_close, 2)
+            pct = round((change / prev_close) * 100, 2)
                 
             ema50 = calculate_ema(closes, 50)
             ema200 = calculate_ema(closes, 200)
