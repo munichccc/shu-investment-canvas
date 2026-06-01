@@ -850,9 +850,9 @@ const stocksData = {
       "companyName": "Bitcoin",
       "industry": "Cryptocurrency",
       "sector": "Digital Asset",
-      "currentPrice": 72767.86,
-      "priceChange": -32884.24,
-      "priceChangePct": -31.13,
+      "currentPrice": 72749.96,
+      "priceChange": -32902.14,
+      "priceChangePct": -31.14,
       "analysisDate": "2026-06-01"
     },
     "overview": {
@@ -884,7 +884,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 72767.86
+          "price": 72749.96
         },
         "poc": {
           "label": "POC",
@@ -6522,11 +6522,11 @@ const screenerData = [
     "symbol": "BTC-USD",
     "name": "Bitcoin",
     "sector": "Digital Asset",
-    "price": 72767.86,
-    "change": -32884.24,
-    "pct": -31.13,
+    "price": 72749.96,
+    "change": -32902.14,
+    "pct": -31.14,
     "pe": 999.0,
-    "rsi": 34.1,
+    "rsi": 34.0,
     "volSpike": 0.8,
     "aboveEma50": false,
     "aboveEma200": false,
@@ -7618,51 +7618,86 @@ function renderFinTable(containerId, rows) {
 }
 
 function renderThesis(thesis) {
-  document.getElementById('thesis-statement').textContent = thesis.statement;
+  document.getElementById('thesis-statement').textContent = thesis.statement || 'No thesis statement available.';
 
   // Bull case
-  document.getElementById('bull-content').innerHTML = `<ol>${thesis.bullCase.map(b => `<li>${b}</li>`).join('')}</ol>`;
+  if (thesis.bullCase && thesis.bullCase.length > 0) {
+    document.getElementById('bull-content').innerHTML = `<ol>${thesis.bullCase.map(b => `<li>${b}</li>`).join('')}</ol>`;
+  } else {
+    document.getElementById('bull-content').innerHTML = '<p class="placeholder-text">Awaiting analysis...</p>';
+  }
 
   // Bear case
-  document.getElementById('bear-content').innerHTML = `<ol>${thesis.bearCase.map(b => `<li>${b}</li>`).join('')}</ol>`;
+  if (thesis.bearCase && thesis.bearCase.length > 0) {
+    document.getElementById('bear-content').innerHTML = `<ol>${thesis.bearCase.map(b => `<li>${b}</li>`).join('')}</ol>`;
+  } else {
+    document.getElementById('bear-content').innerHTML = '<p class="placeholder-text">Awaiting analysis...</p>';
+  }
 
   // Recommendation
   const recAction = document.getElementById('rec-action');
-  recAction.textContent = thesis.recommendation.action;
-  recAction.className = 'rec-action ' + thesis.recommendation.action.toLowerCase().split(' ')[0];
+  const recCard = document.getElementById('recommendation-card');
+  const recDetails = document.getElementById('rec-details');
+  if (thesis.recommendation) {
+    if (recCard) recCard.style.display = 'block';
+    if (recAction) {
+      recAction.textContent = thesis.recommendation.action;
+      recAction.className = 'rec-action ' + thesis.recommendation.action.toLowerCase().split(' ')[0];
+    }
 
-  document.getElementById('rec-details').innerHTML = `
-    <div class="rec-detail-item">
-      <div class="rec-detail-label">Target Price</div>
-      <div class="rec-detail-value">${thesis.recommendation.targetPrice}</div>
-    </div>
-    <div class="rec-detail-item">
-      <div class="rec-detail-label">Time Horizon</div>
-      <div class="rec-detail-value">${thesis.recommendation.timeHorizon}</div>
-    </div>
-    <div class="rec-detail-item">
-      <div class="rec-detail-label">Position Size</div>
-      <div class="rec-detail-value">${thesis.recommendation.positionSize}</div>
-    </div>
-    <div class="rec-detail-item">
-      <div class="rec-detail-label">Entry Strategy</div>
-      <div class="rec-detail-value" style="font-size:12px;font-family:var(--font-sans)">${thesis.recommendation.entryStrategy}</div>
-    </div>
-  `;
+    if (recDetails) {
+      recDetails.innerHTML = `
+        <div class="rec-detail-item">
+          <div class="rec-detail-label">Target Price</div>
+          <div class="rec-detail-value">${thesis.recommendation.targetPrice}</div>
+        </div>
+        <div class="rec-detail-item">
+          <div class="rec-detail-label">Time Horizon</div>
+          <div class="rec-detail-value">${thesis.recommendation.timeHorizon}</div>
+        </div>
+        <div class="rec-detail-item">
+          <div class="rec-detail-label">Position Size</div>
+          <div class="rec-detail-value">${thesis.recommendation.positionSize}</div>
+        </div>
+        <div class="rec-detail-item">
+          <div class="rec-detail-label">Entry Strategy</div>
+          <div class="rec-detail-value" style="font-size:12px;font-family:var(--font-sans)">${thesis.recommendation.entryStrategy}</div>
+        </div>
+      `;
+    }
+  } else {
+    if (recCard) recCard.style.display = 'none';
+  }
 
   // Key Risks
-  document.getElementById('risks-content').innerHTML = thesis.keyRisks.map(r => `
-    <div class="risk-alert">
-      <span class="risk-alert-icon">⚠️</span>
-      <p>${r}</p>
-    </div>
-  `).join('');
+  const risksContent = document.getElementById('risks-content');
+  const risksCard = document.getElementById('risks-card');
+  if (thesis.keyRisks && thesis.keyRisks.length > 0) {
+    if (risksCard) risksCard.style.display = 'block';
+    if (risksContent) {
+      risksContent.innerHTML = thesis.keyRisks.map(r => `
+        <div class="risk-alert">
+          <span class="risk-alert-icon">⚠️</span>
+          <p>${r}</p>
+        </div>
+      `).join('');
+    }
+  } else {
+    if (risksCard) risksCard.style.display = 'none';
+  }
 
   // Sources
-  if (thesis.sources) {
-    document.getElementById('sources-content').innerHTML = thesis.sources.map(s => `
-      <span class="source-tag">📖 ${s}</span>
-    `).join('');
+  const sourcesContent = document.getElementById('sources-content');
+  const sourcesCard = document.getElementById('sources-card');
+  if (thesis.sources && thesis.sources.length > 0) {
+    if (sourcesCard) sourcesCard.style.display = 'block';
+    if (sourcesContent) {
+      sourcesContent.innerHTML = thesis.sources.map(s => `
+        <span class="source-tag">📖 ${s}</span>
+      `).join('');
+    }
+  } else {
+    if (sourcesCard) sourcesCard.style.display = 'none';
   }
 }
 
