@@ -2352,4 +2352,31 @@ unified_content = unified_content.replace('\\`', '`')
 with open('canvas/app.js', 'w', encoding='utf-8') as f:
     f.write(unified_content)
 
-print("Updated all three canvas js files successfully (Portfolio, Growth, and Unified)")
+# 4. Perform Cache Busting on index.html files
+import re
+import time
+version = str(int(time.time()))
+html_files = [
+    'my_portfolio/canvas/index.html',
+    'growth_stocks/canvas/index.html',
+    'canvas/index.html'
+]
+for file_path in html_files:
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Replace script tag of app.js with a versioned parameter
+        new_content = re.sub(
+            r'<script\s+src=["\']app\.js(?:\?v=[a-zA-Z0-9_-]+)?["\']></script>',
+            f'<script src="app.js?v={version}"></script>',
+            content
+        )
+        
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"Applied cache-busting v={version} to {file_path}")
+    except Exception as html_err:
+        print(f"Warning: Failed to update cache busting for {file_path}: {html_err}")
+
+print("Updated all three canvas js and HTML files successfully (Portfolio, Growth, and Unified)")

@@ -850,9 +850,9 @@ const stocksData = {
       "companyName": "Bitcoin",
       "industry": "Cryptocurrency",
       "sector": "Digital Asset",
-      "currentPrice": 72749.96,
-      "priceChange": -32902.14,
-      "priceChangePct": -31.14,
+      "currentPrice": 72675.88,
+      "priceChange": -32976.22,
+      "priceChangePct": -31.21,
       "analysisDate": "2026-06-01"
     },
     "overview": {
@@ -884,7 +884,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 72749.96
+          "price": 72675.88
         },
         "poc": {
           "label": "POC",
@@ -5610,11 +5610,11 @@ const screenerData = [
     "symbol": "BTC-USD",
     "name": "Bitcoin",
     "sector": "Digital Asset",
-    "price": 72749.96,
-    "change": -32902.14,
-    "pct": -31.14,
+    "price": 72675.88,
+    "change": -32976.22,
+    "pct": -31.21,
     "pe": 999.0,
-    "rsi": 34.0,
+    "rsi": 33.8,
     "volSpike": 0.8,
     "aboveEma50": false,
     "aboveEma200": false,
