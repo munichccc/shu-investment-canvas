@@ -1334,6 +1334,11 @@ function initScreener() {{
       if (metric === 'EMA200' && !item.aboveEma200) return false;
       if (metric === 'VOL_SPIKE' && item.volSpike <= 1.3) return false;
       if (metric === 'OVERSOLD' && item.rsi >= 40) return false;
+      if (metric === 'AT_SUPPORT') {{
+        const s1 = item.s1 || (item.price * 0.95);
+        const s2 = item.s2 || (item.price * 0.90);
+        if (item.price > s1 * 1.02 || item.price < s2 * 0.95) return false;
+      }}
       return true;
     }});
     
@@ -2254,6 +2259,17 @@ for sym, meta_static in watchlist_metadata.items():
             # 10. RSI < 35 (Oversold opportunity)
             if rsi < 35: score += 1
             
+            # Compute support levels for screener filtering
+            if sym in portfolio_data:
+                s1_val = portfolio_data[sym]["technical"]["levels"]["supports"][0]["price"]
+                s2_val = portfolio_data[sym]["technical"]["levels"]["supports"][1]["price"]
+            elif sym in growth_data:
+                s1_val = growth_data[sym]["technical"]["levels"]["supports"][0]["price"]
+                s2_val = growth_data[sym]["technical"]["levels"]["supports"][1]["price"]
+            else:
+                s1_val = round(ema50, 2) if (ema50 > 0 and ema50 < current_price) else round(current_price * 0.95, 2)
+                s2_val = round(ema200, 2) if (ema200 > 0 and ema200 < current_price) else round(current_price * 0.90, 2)
+
             screener_results.append({
                 "symbol": sym,
                 "name": meta_static["name"],
@@ -2266,7 +2282,9 @@ for sym, meta_static in watchlist_metadata.items():
                 "volSpike": vol_spike,
                 "aboveEma50": current_price > ema50,
                 "aboveEma200": current_price > ema200,
-                "score": score
+                "score": score,
+                "s1": s1_val,
+                "s2": s2_val
             })
             
             # Dynamically update price, change & analysis date of core stocks in-memory

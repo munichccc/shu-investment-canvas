@@ -13,7 +13,7 @@ const stocksData = {
       "currentPrice": 376.37,
       "priceChange": -3.97,
       "priceChangePct": -1.04,
-      "analysisDate": "2026-06-01"
+      "analysisDate": "2026-06-02"
     },
     "overview": {
       "verdict": "BUY",
@@ -223,7 +223,7 @@ const stocksData = {
       "currentPrice": 1035.5,
       "priceChange": 64.5,
       "priceChangePct": 6.64,
-      "analysisDate": "2026-06-01"
+      "analysisDate": "2026-06-02"
     },
     "overview": {
       "verdict": "BUY / ACCUMULATE",
@@ -433,7 +433,7 @@ const stocksData = {
       "currentPrice": 435.63,
       "priceChange": 17.18,
       "priceChangePct": 4.11,
-      "analysisDate": "2026-06-01"
+      "analysisDate": "2026-06-02"
     },
     "overview": {
       "verdict": "BUY",
@@ -643,7 +643,7 @@ const stocksData = {
       "currentPrice": 224.36,
       "priceChange": 13.22,
       "priceChangePct": 6.26,
-      "analysisDate": "2026-06-01"
+      "analysisDate": "2026-06-02"
     },
     "overview": {
       "verdict": "HOLD / ACCUMULATE",
@@ -850,10 +850,10 @@ const stocksData = {
       "companyName": "Bitcoin",
       "industry": "Cryptocurrency",
       "sector": "Digital Asset",
-      "currentPrice": 71325.97,
-      "priceChange": -2253.72,
-      "priceChangePct": -3.06,
-      "analysisDate": "2026-06-01"
+      "currentPrice": 69461.91,
+      "priceChange": -1857.86,
+      "priceChangePct": -2.6,
+      "analysisDate": "2026-06-02"
     },
     "overview": {
       "verdict": "BUY",
@@ -884,7 +884,7 @@ const stocksData = {
       "levels": {
         "current": {
           "label": "Current",
-          "price": 71325.97
+          "price": 69461.91
         },
         "poc": {
           "label": "POC",
@@ -1160,7 +1160,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 2.13x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 2.16x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": true
         }
       ],
@@ -1334,7 +1334,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 2.06x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 2.07x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -1508,7 +1508,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.22x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.24x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -1682,7 +1682,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.64x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.74x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -1856,7 +1856,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.83x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.84x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2030,7 +2030,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.43x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.48x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2204,7 +2204,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.97x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.98x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2552,7 +2552,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.34x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.35x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2726,7 +2726,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.02x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.06x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -2900,7 +2900,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.97x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.98x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3248,7 +3248,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.82x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.03x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3422,7 +3422,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.78x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.79x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3596,7 +3596,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.18x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.19x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3770,7 +3770,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.63x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.64x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -3944,7 +3944,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 0.92x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 0.93x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": true
         }
       ],
@@ -4292,7 +4292,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.57x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.58x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4466,7 +4466,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.51x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.54x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4640,7 +4640,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.55x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.59x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4814,7 +4814,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.5x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.51x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -4988,7 +4988,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.82x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.83x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5162,7 +5162,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.02x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.03x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": true
         }
       ],
@@ -5336,7 +5336,7 @@ const stocksData = {
           "confirmed": true
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.12x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.13x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5510,7 +5510,7 @@ const stocksData = {
           "confirmed": false
         },
         {
-          "name": "สถิติ Institution Vol Spike 1.59x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
+          "name": "สถิติ Institution Vol Spike 1.64x มีแรงวอลุ่มสถาบันสนับสนุนการทะลุฐาน",
           "confirmed": false
         }
       ],
@@ -5601,24 +5601,28 @@ const screenerData = [
     "pct": 2.28,
     "pe": 32.4,
     "rsi": 72.9,
-    "volSpike": 1.45,
+    "volSpike": 1.48,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 4,
+    "s1": 410.0,
+    "s2": 395.0
   },
   {
     "symbol": "BTC-USD",
     "name": "Bitcoin",
     "sector": "Digital Asset",
-    "price": 71325.97,
-    "change": -2253.72,
-    "pct": -3.06,
+    "price": 69461.91,
+    "change": -1857.86,
+    "pct": -2.6,
     "pe": 999.0,
-    "rsi": 30.2,
-    "volSpike": 1.42,
+    "rsi": 26.1,
+    "volSpike": 1.54,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 2
+    "score": 2,
+    "s1": 64000.0,
+    "s2": 60000.0
   },
   {
     "symbol": "AAPL",
@@ -5629,10 +5633,12 @@ const screenerData = [
     "pct": -1.84,
     "pe": 27.5,
     "rsi": 67.0,
-    "volSpike": 0.93,
+    "volSpike": 1.03,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 184.0,
+    "s2": 175.0
   },
   {
     "symbol": "NVDA",
@@ -5643,10 +5649,12 @@ const screenerData = [
     "pct": 6.26,
     "pe": 58.2,
     "rsi": 60.4,
-    "volSpike": 1.16,
+    "volSpike": 1.24,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 212.0,
+    "s2": 200.0
   },
   {
     "symbol": "AMZN",
@@ -5657,10 +5665,12 @@ const screenerData = [
     "pct": -3.47,
     "pe": 38.2,
     "rsi": 48.9,
-    "volSpike": 1.31,
+    "volSpike": 1.35,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 4,
+    "s1": 175.0,
+    "s2": 164.0
   },
   {
     "symbol": "GOOGL",
@@ -5671,10 +5681,12 @@ const screenerData = [
     "pct": -1.04,
     "pe": 24.5,
     "rsi": 49.8,
-    "volSpike": 0.94,
+    "volSpike": 1.04,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 4,
+    "s1": 375.0,
+    "s2": 365.0
   },
   {
     "symbol": "META",
@@ -5685,10 +5697,12 @@ const screenerData = [
     "pct": -5.07,
     "pe": 24.5,
     "rsi": 41.6,
-    "volSpike": 1.8,
+    "volSpike": 1.88,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 2
+    "score": 2,
+    "s1": 560.0,
+    "s2": 530.0
   },
   {
     "symbol": "TSLA",
@@ -5699,10 +5713,12 @@ const screenerData = [
     "pct": -4.57,
     "pe": 58.5,
     "rsi": 50.4,
-    "volSpike": 0.83,
+    "volSpike": 0.86,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 4,
+    "s1": 165.0,
+    "s2": 152.0
   },
   {
     "symbol": "MU",
@@ -5713,10 +5729,12 @@ const screenerData = [
     "pct": 6.64,
     "pe": 22.8,
     "rsi": 80.7,
-    "volSpike": 0.81,
+    "volSpike": 0.82,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 740.0,
+    "s2": 710.0
   },
   {
     "symbol": "TSM",
@@ -5730,7 +5748,9 @@ const screenerData = [
     "volSpike": 1.35,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 6
+    "score": 6,
+    "s1": 395.0,
+    "s2": 380.0
   },
   {
     "symbol": "ASML",
@@ -5744,7 +5764,9 @@ const screenerData = [
     "volSpike": 0.65,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 1320.0,
+    "s2": 1280.0
   },
   {
     "symbol": "ORCL",
@@ -5755,10 +5777,12 @@ const screenerData = [
     "pct": 9.91,
     "pe": 26.5,
     "rsi": 80.7,
-    "volSpike": 2.13,
+    "volSpike": 2.16,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 6
+    "score": 6,
+    "s1": 181.96,
+    "s2": 202.4
   },
   {
     "symbol": "NOW",
@@ -5769,10 +5793,12 @@ const screenerData = [
     "pct": 9.24,
     "pe": 55.0,
     "rsi": 78.3,
-    "volSpike": 2.06,
+    "volSpike": 2.07,
     "aboveEma50": true,
     "aboveEma200": false,
-    "score": 4
+    "score": 4,
+    "s1": 102.45,
+    "s2": 122.27
   },
   {
     "symbol": "PLTR",
@@ -5783,10 +5809,12 @@ const screenerData = [
     "pct": 2.63,
     "pe": 82.0,
     "rsi": 70.0,
-    "volSpike": 1.22,
+    "volSpike": 1.24,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 2
+    "score": 2,
+    "s1": 142.52,
+    "s2": 154.64
   },
   {
     "symbol": "ANET",
@@ -5797,10 +5825,12 @@ const screenerData = [
     "pct": 7.03,
     "pe": 38.5,
     "rsi": 64.9,
-    "volSpike": 0.64,
+    "volSpike": 0.74,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 150.1,
+    "s2": 137.97
   },
   {
     "symbol": "AMD",
@@ -5811,10 +5841,12 @@ const screenerData = [
     "pct": -1.16,
     "pe": 48.0,
     "rsi": 73.7,
-    "volSpike": 0.83,
+    "volSpike": 0.84,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 4,
+    "s1": 366.43,
+    "s2": 253.95
   },
   {
     "symbol": "AVGO",
@@ -5825,10 +5857,12 @@ const screenerData = [
     "pct": 2.95,
     "pe": 35.2,
     "rsi": 69.7,
-    "volSpike": 1.43,
+    "volSpike": 1.48,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 398.39,
+    "s2": 351.95
   },
   {
     "symbol": "NFLX",
@@ -5839,10 +5873,12 @@ const screenerData = [
     "pct": -0.2,
     "pe": 36.4,
     "rsi": 36.7,
-    "volSpike": 0.97,
+    "volSpike": 0.98,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 0
+    "score": 0,
+    "s1": 81.56,
+    "s2": 77.27
   },
   {
     "symbol": "COIN",
@@ -5856,7 +5892,9 @@ const screenerData = [
     "volSpike": 0.92,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 1
+    "score": 1,
+    "s1": 173.48,
+    "s2": 164.35
   },
   {
     "symbol": "CRWD",
@@ -5867,10 +5905,12 @@ const screenerData = [
     "pct": 7.0,
     "pe": 72.0,
     "rsi": 86.7,
-    "volSpike": 1.34,
+    "volSpike": 1.35,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 531.72,
+    "s2": 481.99
   },
   {
     "symbol": "SMCI",
@@ -5881,10 +5921,12 @@ const screenerData = [
     "pct": 1.71,
     "pe": 18.5,
     "rsi": 80.3,
-    "volSpike": 1.02,
+    "volSpike": 1.06,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 4,
+    "s1": 32.11,
+    "s2": 36.5
   },
   {
     "symbol": "CELH",
@@ -5895,10 +5937,12 @@ const screenerData = [
     "pct": -7.18,
     "pe": 45.0,
     "rsi": 46.1,
-    "volSpike": 0.97,
+    "volSpike": 0.98,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 0
+    "score": 0,
+    "s1": 29.34,
+    "s2": 27.79
   },
   {
     "symbol": "VRT",
@@ -5912,7 +5956,9 @@ const screenerData = [
     "volSpike": 1.06,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 3
+    "score": 3,
+    "s1": 309.28,
+    "s2": 224.24
   },
   {
     "symbol": "NU",
@@ -5923,10 +5969,12 @@ const screenerData = [
     "pct": -1.07,
     "pe": 28.4,
     "rsi": 42.6,
-    "volSpike": 0.82,
+    "volSpike": 1.03,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 1
+    "score": 1,
+    "s1": 12.34,
+    "s2": 11.69
   },
   {
     "symbol": "MELI",
@@ -5937,10 +5985,12 @@ const screenerData = [
     "pct": 2.08,
     "pe": 46.5,
     "rsi": 53.8,
-    "volSpike": 0.78,
+    "volSpike": 0.79,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 2
+    "score": 2,
+    "s1": 1644.43,
+    "s2": 1557.88
   },
   {
     "symbol": "MSTR",
@@ -5951,10 +6001,12 @@ const screenerData = [
     "pct": -5.85,
     "pe": 95.0,
     "rsi": 40.4,
-    "volSpike": 1.18,
+    "volSpike": 1.19,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 1
+    "score": 1,
+    "s1": 142.29,
+    "s2": 134.8
   },
   {
     "symbol": "HOOD",
@@ -5965,10 +6017,12 @@ const screenerData = [
     "pct": -3.79,
     "pe": 24.2,
     "rsi": 63.5,
-    "volSpike": 1.63,
+    "volSpike": 1.64,
     "aboveEma50": true,
     "aboveEma200": false,
-    "score": 5
+    "score": 5,
+    "s1": 79.92,
+    "s2": 81.66
   },
   {
     "symbol": "LUNR",
@@ -5979,10 +6033,12 @@ const screenerData = [
     "pct": -12.82,
     "pe": 15.0,
     "rsi": 57.9,
-    "volSpike": 0.92,
+    "volSpike": 0.93,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 6
+    "score": 6,
+    "s1": 29.19,
+    "s2": 18.98
   },
   {
     "symbol": "QCOM",
@@ -5996,7 +6052,9 @@ const screenerData = [
     "volSpike": 0.72,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 6
+    "score": 6,
+    "s1": 183.86,
+    "s2": 164.9
   },
   {
     "symbol": "ARM",
@@ -6007,10 +6065,12 @@ const screenerData = [
     "pct": 15.73,
     "pe": 75.0,
     "rsi": 82.5,
-    "volSpike": 1.57,
+    "volSpike": 1.58,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 221.13,
+    "s2": 167.16
   },
   {
     "symbol": "PANW",
@@ -6021,10 +6081,12 @@ const screenerData = [
     "pct": 6.67,
     "pe": 48.0,
     "rsi": 83.7,
-    "volSpike": 1.51,
+    "volSpike": 1.54,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 209.04,
+    "s2": 193.43
   },
   {
     "symbol": "NET",
@@ -6035,10 +6097,12 @@ const screenerData = [
     "pct": 11.99,
     "pe": 68.0,
     "rsi": 71.2,
-    "volSpike": 1.55,
+    "volSpike": 1.59,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 210.97,
+    "s2": 204.16
   },
   {
     "symbol": "DDOG",
@@ -6049,10 +6113,12 @@ const screenerData = [
     "pct": 12.19,
     "pe": 54.0,
     "rsi": 91.1,
-    "volSpike": 1.5,
+    "volSpike": 1.51,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 5
+    "score": 5,
+    "s1": 173.06,
+    "s2": 148.17
   },
   {
     "symbol": "SNOW",
@@ -6063,10 +6129,12 @@ const screenerData = [
     "pct": 9.63,
     "pe": 62.0,
     "rsi": 89.2,
-    "volSpike": 1.82,
+    "volSpike": 1.83,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 4,
+    "s1": 170.5,
+    "s2": 194.55
   },
   {
     "symbol": "ABNB",
@@ -6077,10 +6145,12 @@ const screenerData = [
     "pct": 3.42,
     "pe": 26.5,
     "rsi": 55.3,
-    "volSpike": 1.02,
+    "volSpike": 1.03,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 6
+    "score": 6,
+    "s1": 134.59,
+    "s2": 131.06
   },
   {
     "symbol": "UBER",
@@ -6091,10 +6161,12 @@ const screenerData = [
     "pct": 4.79,
     "pe": 31.4,
     "rsi": 50.6,
-    "volSpike": 1.12,
+    "volSpike": 1.13,
     "aboveEma50": false,
     "aboveEma200": false,
-    "score": 2
+    "score": 2,
+    "s1": 70.08,
+    "s2": 66.39
   },
   {
     "symbol": "PATH",
@@ -6105,10 +6177,12 @@ const screenerData = [
     "pct": 11.77,
     "pe": 22.0,
     "rsi": 73.9,
-    "volSpike": 1.59,
+    "volSpike": 1.64,
     "aboveEma50": true,
     "aboveEma200": true,
-    "score": 4
+    "score": 4,
+    "s1": 11.03,
+    "s2": 12.35
   }
 ];
 
@@ -6262,6 +6336,11 @@ function initScreener() {
       if (metric === 'EMA200' && !item.aboveEma200) return false;
       if (metric === 'VOL_SPIKE' && item.volSpike <= 1.3) return false;
       if (metric === 'OVERSOLD' && item.rsi >= 40) return false;
+      if (metric === 'AT_SUPPORT') {
+        const s1 = item.s1 || (item.price * 0.95);
+        const s2 = item.s2 || (item.price * 0.90);
+        if (item.price > s1 * 1.02 || item.price < s2 * 0.95) return false;
+      }
       return true;
     });
     
